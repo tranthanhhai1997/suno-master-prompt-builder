@@ -1,0 +1,1136 @@
+--- PAGE 1 ---
+ 
+Suno Master Cheatsheet 
+Tổng hợp từ: Suno Prompt & Tag Cheatsheet God Mode Cẩm nang tạo bài hát độc nhất vô 
+nhị (Unique Songs Prompts & Tags) - Cập nhật cho Suno v5/v5.5 Tháng 4 năm 2026 
+Lưu ý quan trọng: 
+●​ Tags (Thẻ lệnh) luôn nằm trong dấu ngoặc vuông [...]. 
+●​ Dấu ngoặc đơn (...) là phần được hát, KHÔNG phải lệnh điều khiển. 
+Mục lục 
+1.​ The Golden Rules (Quy tắc vàng) 
+2.​ Vocal Control (Điều khiển giọng hát) - Gender & Character 
+3.​ Vocal Delivery & Style (Lối hát & Phong cách) 
+4.​ Vocal Effects (Hiệu ứng giọng hát) 
+5.​ Emotion Delivery (Thể hiện cảm xúc) 
+6.​ Ad-Libs & Onomatopoeia (Từ đệm & Từ tượng thanh) 
+7.​ Duet Protocol (Giao thức hát song ca) 
+8.​ V5 Vocal Personas (Hình mẫu giọng hát V5) 
+9.​ Style Box - Genre Tags (Thẻ thể loại ở ô Style) 
+10.​Genre Fusion Pairs (Cặp đôi kết hợp thể loại) 
+11.​Tempo, Key & Time Signature (Tốc độ, Tông & Nhịp) 
+12.​Mood & Energy Tags (Thẻ cảm xúc & Năng lượng) 
+13.​Structure Tags (Thẻ cấu trúc bài hát) 
+14.​Instrument Tags (Thẻ nhạc cụ) 
+15.​Production & Texture Tags (Thẻ sản xuất & Chất âm) 
+16.​Atmosphere & Sound FX (Không gian & Hiệu ứng âm thanh) 
+17.​Advanced: Pipe Stacking (Nâng cao: Xếp chồng thẻ bằng dấu |) 
+18.​Advanced: Making Unique Songs (Nâng cao: Tạo bài hát độc lạ) 
+19.​Genre Recipe Stacks (Công thức xếp thẻ theo thể loại) 
+20.​Troubleshooting (Sửa lỗi thường gặp) 
+21.​Copy-Paste Templates (Mẫu sao chép nhanh) 
+1. The Golden Rules (Quy tắc vàng) 
+Quy tắc 
+Chi tiết 
+Front-load the Style box 
+20-30 từ đầu tiên trong ô Style có trọng số cao 
+nhất. 
+Max 2 genres 
+Viết thể loại chủ đạo (dominant genre) lên 
+trước. 
+Max 3-4 named instruments 
+Ghi quá nhiều nhạc cụ sẽ làm loãng tín hiệu 
+điều khiển. 
+[...] = instructions 
+Dấu ngoặc vuông dùng cho cấu trúc/sản xuất; 
+không bao giờ được hát. 
+(...) = performed 
+Dấu ngoặc đơn tạo các lớp bè/giọng nền 
+(background/backing vocals); luôn luôn được 
+hát. 
+
+--- PAGE 2 ---
+Quy tắc 
+Chi tiết 
+Tags are probability weights 
+Thẻ là trọng số xác suất, không phải lệnh cam 
+kết 100%. Hãy tạo (generate) 3-4 phiên bản. 
+BPM, key, mood go in Style box 
+Viết trong ô Style box, KHÔNG viết trong khung 
+chứa lời bài hát (lyrics field). 
+Section tags go before lyrics 
+Đặt thẻ phân đoạn ngay trước khi bắt đầu lời 
+của đoạn đó. 
+Negative prompts go last 
+Luôn đặt các lệnh phủ định ở cuối cùng của ô 
+Style box. 
+8-15 tags total is the sweet spot 
+Dưới 5 thẻ = quá mơ hồ. Trên 20 thẻ = bị 
+loãng. 
+Ký hiệu định dạng lời bài hát (Lyric Formatting Symbols) 
+Ký hiệu 
+Chức năng 
+Ví dụ 
+() 
+Giọng nền / Hát bè 
+(Background/backing vocal 
+layer) 
+(I'm still here) 
+[] 
+Lệnh cấu trúc + sản xuất; 
+KHÔNG hát 
+[Chorus] [Guitar Solo] 
+Ngắt âm 
+Kéo dài nốt, ngân (vibrato), 
+tách âm tiết / đánh vần 
+ho-me free-dom-, al-most 
+G-A-L-A-X-Y 
+CHỮ IN HOA 
+Hát to hơn, lực mạnh hơn (tối 
+đa 1-3 từ) 
+WE RISE together 
+"" 
+Nói hoặc thì thầm (Spoken or 
+whispered) 
+"you were never there" 
+Dấu chấm ... 
+Giữ nốt / kéo dài nốt (nhiều 
+chấm hơn = giữ lâu hơn) 
+Whispers... 
+2. Vocal Control (Điều khiển giọng hát) 
+Gender & Character (Giới tính & Đặc điểm) 
+●​ [Male Vocal] / [Male Vocalist] 
+●​ [Female Vocal] / [Female Vocalist] 
+●​ [Male Tenor] / [Baritone] 
+●​ [Female Soprano] / [Alto] 
+●​ [Child Vocal] / [Elderly Vocal] 
+●​ [Boy] / [Girl] 
+●​ [Choir] / [Duet] 
+●​ [Male Female Harmony] 
+●​ [Gang Vocals] 
+●​ [Backing Vocals] 
+●​ [Announcer] / [Reporter] 
+●​ [Female narrator] 
+Choral/SATB Tags (Thẻ hợp xướng) 
+
+--- PAGE 3 ---
+Tag 
+Mô tả 
+Sử dụng tốt nhất cho 
+[Multiple voice chorus satb] 
+Xếp chồng các giọng Soprano, 
+Alto, Tenor, Bass 
+Đoạn Hook điệp khúc hoành 
+tráng 
+[SATB] 
+Viết tắt của thẻ trên 
+Như trên 
+[Choir: Gospel] 
+Hát bè hợp xướng nhạc Gospel 
+đầy đặn 
+Gospel, soul, bài ca anthem 
+[Choir vocals] 
+Dàn hợp xướng nói chung 
+Nhạc giao hưởng (Orchestral), 
+sử thi (epic) 
+⚠️ SATB Rule: Chỉ sử dụng ở đoạn [Chorus]. Dùng trong toàn bộ bài hát sẽ làm mất đi tính 
+cao trào, kịch tính. 
+3. Vocal Delivery & Style (Lối hát & Phong cách) 
+Tag 
+Hiệu ứng 
+Thể loại phù hợp nhất 
+[Whisper] / [Whispers] 
+Nhỏ nhẹ, thân mật 
+ASMR, ballads, ambient 
+[Spoken word] / [Spoken Word 
+verse] 
+Nói, không hát (Nguyên đoạn 
+verse nói) 
+Hip-hop, intros, thơ, country, 
+storytelling 
+[Rap] 
+Đọc rap có nhịp điệu 
+Hip-hop, trap 
+[Melodic Rap] 
+Lai giữa hát và rap 
+Pop rap, trap 
+[Chant vocals] 
+Đồng thanh hô khẩu hiệu/tụng 
+ca 
+Anthems, rock, metal 
+[Crowd-style vocals] 
+Tiếng hô vang của đám đông 
+Stadium rock, EDM 
+[Harmonies] / [Stacked 
+harmonies] 
+Các lớp giọng bè hòa thanh 
+Pop R&B, gospel 
+[Falsetto] 
+Giọng giả thanh nam cao 
+R&B, pop, disco 
+[Belting] / [Belted] 
+Hát giọng ngực cao, nội lực, 
+ngân dài 
+Pop, nhạc kịch (theater) 
+[Growl] / [Growled] 
+Giọng gầm gừ, thô ráp 
+Metal, rock 
+[Crooning] 
+Hát trầm ấm, trữ tình, thủ thỉ 
+Jazz, vintage pop 
+[Operatic] 
+Kỹ thuật hát cổ điển/Opera 
+Opera, symphonic metal 
+[Scat] 
+Hát ê a ngẫu hứng kiểu Jazz 
+Jazz 
+[Screaming] / [Screams] 
+Gào thét gắt 
+Metal, horror, punk 
+[Anthemic chorus] 
+Điệp khúc lớn, bùng nổ kiểu 
+sân vận động 
+Stadium rock, pop 
+[Autotuned delivery processing] Giọng xử lý AutoTune hiện đại Trap, pop 
+[Raspy lead vocal] 
+Giọng khàn, gai góc 
+Rock, blues 
+[Emotional build-up] 
+Tăng dần cường độ cảm xúc 
+giọng hát 
+Ballads, pop 
+[Cinematic vocal pacing] 
+Nhả chữ chậm rãi, kịch tính 
+Cinematic, spoken word 
+[Humming] 
+Tiếng ngân nga không lời 
+Ambient, folk 
+[Vocalization] 
+Kết cấu giọng hát không lời 
+Ambient, experimental 
+[Acapella] 
+Chỉ có giọng hát, không nhạc 
+cụ 
+Mọi thể loại 
+4. Vocal Effects (Hiệu ứng giọng hát) 
+Tag 
+Hiệu ứng 
+Tốt nhất cho 
+[Reverb] / [Reverb Heavy] 
+Không gian rộng, vang vọng 
+Ballads, ambient 
+
+--- PAGE 4 ---
+Tag 
+Hiệu ứng 
+Tốt nhất cho 
+[Delay] / [Echoing vocals] 
+Vang lặp lại (echo) 
+Dub, experimental 
+[AutoTune] / [Voice: Auto-tune] Sửa nốt / hiệu ứng giọng robot Modern pop, trap 
+[No AutoTune] 
+Giọng mộc tự nhiên 
+Organic, acoustic 
+[Distorted Vocals] 
+Giọng méo, vỡ rè (overdriven) Rock, industrial 
+[Filtered Vocals] 
+Giọng bị lọc tần số 
+Lo-fi, hiệu ứng điện thoại 
+[Vocoder] 
+Giọng tổng hợp kiểu robot 
+Electronic, synthwave 
+[Telephone Effect] / [Telephone 
+Voice] 
+Giọng nghẹt như qua loa điện 
+thoại 
+Vintage, các đoạn chuyển tiếp 
+(transitions) 
+[Tape-Saturated] 
+Chất âm analog ấm, hơi 
+xước/cũ 
+Lo-fi, retro 
+[Harmonized chorus] 
+Điệp khúc được bè hòa thanh Pop, gospel 
+[Pitched Up] 
+Đẩy tông giọng cao lên 
+Pop, electronic 
+[Pitched Down] 
+Hạ tông giọng trầm xuống 
+Dark, trap 
+[Doubled] 
+Nhân đôi bản thu giọng hát 
+Rock, pop 
+[Breathy] 
+Giọng nhiều hơi, thì thầm 
+Ballads, ambient 
+[Raspy] 
+Chất giọng khàn 
+Rock, blues 
+[Megaphone] 
+Hiệu ứng loa cầm tay loa pin 
+Punk, quirky 
+[Lo-fi Vocal] 
+Giọng giảm chất lượng kiểu cổ 
+điển 
+Lo-fi, bedroom pop 
+5. Emotion Delivery (Thể hiện cảm xúc) 
+💡 Đặt ở một dòng riêng biệt ngay trước câu lời bài hát muốn thể hiện cảm xúc. KHÔNG xếp 
+chồng bằng dấu |. 
+●​ [Sad] - Buồn bã nói chung 
+●​ [Angry tone] - Giận dữ, đối đầu, mạnh mẽ 
+●​ [Crying voice] - Giọng mếu máo, nghẹn ngào như khóc 
+●​ [Spoken word crying] - Vừa nói vừa khóc (Combo hủy diệt) 
+●​ [Mocking laughter] - Cười chế nhạo, hài hước đen tối (dark humor) 
+●​ [Vulnerable] - Yếu đuối, trần trụi cảm xúc 
+●​ [Defiant] - Thách thức, nổi loạn, kiên cường 
+●​ [Sultry] - Gợi cảm, mượt mà 
+●​ [Joyful] - Vui tươi, ăn mừng 
+●​ [Melancholic] - U sầu, hoài niệm 
+●​ [Intimate] - Thân mật, gần gũi 
+●​ [Haunted] - Ma mị, bất an 
+●​ [Desperate] - Tuyệt vọng, khẩn thiết 
+●​ [Tender] - Dịu dàng, yêu thương 
+●​ [Triumphant] - Khải hoàn, chiến thắng 
+●​ [Mysterious] - Bí ẩn 
+Sắc thái âm lượng (Dynamics) 
+●​ [Soft] (Nhỏ nhẹ) 
+●​ [Building] (Cao trào dần) 
+●​ [Powerful] (Mạnh mẽ) 
+●​ [Crescendo] (To dần lên) 
+●​ [Quiet] (Phẳng lặng/Nhỏ) 
+
+--- PAGE 5 ---
+●​ [Loud] (To) 
+●​ [Climactic] (Đỉnh điểm) 
+●​ [Gentle] (Nhẹ nhàng) 
+●​ [Decrescendo] (Nhỏ dần đi) 
+●​ [Thunderous] (Ầm vang như sấm) 
+The "Killer Combo" (Sự thay đổi cảm xúc đột ngột): 
+[spoken word crying] Why did you leave me [laughter]​
+-> Tạo ra sự chuyển biến tâm trạng kịch tính ngay trong một dòng lời.​
+ 
+6. Ad-Libs & Onomatopoeia (Từ đệm & Từ tượng 
+thanh) 
+Đặt ở một dòng riêng biệt giữa các câu lời bài hát, khớp theo nhịp (beat). Định dạng: [adlib 
+TAG] hoặc VIẾT HOA TỪ TƯỢNG THANH. 
+●​ [adlib boom] - Tiếng nổ/va đập mạnh 
+●​ [adlib clap] - Tiếng vỗ tay 
+●​ [adlib hey] - Tiếng hô "HEY" 
+●​ [adlib yeah] - Tiếng hô "YEAH" 
+●​ [adlib whoa] - Tiếng hô "WHOA" 
+●​ [adlib uh] - Tiếng "UH" đệm theo nhịp 
+●​ [adlib ayy] - Tiếng "AYY" 
+●​ [adlib ok] - Tiếng "OK" 
+Ad-Libs lồng trong câu (Sử dụng dấu ngoặc đơn): 
+●​ (oh yeah) | (hey!) | (woo!) 
+●​ (uh) | (yeah-yeah) | (mmm) 
+Định dạng Tiếng thét & Gầm (Scream & Growl) 
+[Bridge heavy metal Growl]​
+AAAAAH WE WILL NEVER BOW​
+RAAAAH TEAR THIS SYSTEM DOWN​
+ 
+⚠️ Quy tắc: Viết hoa toàn bộ câu hét (ALL CAPS) và kéo dài các nguyên âm. Càng nhiều 
+nguyên âm = lực hét càng mạnh. 
+7. Duet Protocol (Giao thức hát song ca) 
+Một thẻ đơn lẻ thường làm giọng ca bị lệch/lẫn lộn. Hãy dùng Mỏ neo 3 vị trí (Three-Location 
+Anchoring): 
+●​ Bước 1 - Ô Style Prompt: This is a duet between John (male) and Jane (female), 
+[genre], [other tags] 
+●​ Bước 2 - Tiêu đề lời bài hát (Nằm ở trên cùng của khung Lyrics): [Duet: John male 
+and Jane female] 
+●​ Bước 3 - Nhãn cho từng đoạn (Per-Section Labels):​
+[Verse 1]​
+[John]​
+Walking down that road alone...​
+​
+
+--- PAGE 6 ---
+[Chorus]​
+[Both]​
+We were fire and rain...​
+​
+[Verse 2]​
+[Jane]​
+I never thought you'd stay...​
+ 
+⚠️ Stability Rule (Quy tắc ổn định): Giao trọn vẹn cả đoạn Verse cho một người hát. Tránh 
+đổi người theo từng dòng đơn lẻ vì giọng hát sẽ dễ bị lỗi khi chuyển đổi giữa chừng. 
+8. V5 Vocal Personas (Hình mẫu giọng hát V5) 
+Các persona được đặt tên ở V5 giúp giữ vững danh tính người hát xuyên suốt các phân đoạn 
+dài: 
+●​ [Whisper Soul] - Giọng R&B nhỏ nhẹ, thân mật 
+●​ [Power Praise] - Giọng ca nội lực dòng nhạc Gospel 
+●​ [Retro Diva] - Giọng nữ phong cách cổ điển thập niên 60s-80s 
+●​ [Conversational Flow] - Giọng nói tự nhiên, gần giống rap 
+●​ [Persona: Pop Star] - Phong cách trình diễn Pop đương đại 
+●​ [Vocal Style: Breathless] - Giọng hát gấp gáp, hụt hơi 
+●​ [Vocal Style: Melismatic] - Lối luyến láy phức tạp (R&B/soul) 
+●​ [Vocal Style: Monotone] - Giọng đều đều, vô cảm (post-punk, rap) 
+●​ [Vocal Style: Raspy] - Chất giọng khàn, phong trần 
+●​ [Vocal Style: Shouting] - Năng lượng cao, gào thét (punk, metal) 
+●​ [Vocal Persona: stable] - Giữ nguyên một chất giọng xuyên suốt bài (v5) 
+9. Style Box - Genre Tags (Thể loại nhạc) 
+Chỉ sử dụng tối đa 2 thể loại cùng lúc. Xếp thể loại chủ đạo lên trước. 
+●​ Electronic & Dance: deep house, tech house, dreamstep, drum and bass, trance, 
+psytrance, goa trance, dubstep, synthwave, retrowave, chillwave, phonk, ambient, IDM, 
+future bass, downtempo, hardstyle, electro, industrial 
+●​ Hip-Hop & R&B: trap, boom bap, lo-fi hip-hop, drill, neo-soul, contemporary R&B, 
+afrobeat, phonk, hardcore rap, Atlanta rap 
+●​ Rock & Alternative: indie rock, grunge, post-punk, shoegaze, math rock, alt-rock, garage 
+rock, psychedelic rock, progressive rock, emo, post-hardcore, nu metal, sludge metal 
+●​ Metal: heavy metal, thrash metal, death metal, black metal, power metal, glam metal, 
+alternative metal 
+●​ Pop: synth-pop, dream pop, bubblegum pop, K-pop, J-pop, city pop, baroque pop, 
+bedroom pop, art pop, dance pop, electropop, indie pop 
+●​ Country & Folk: folk, Americana, bluegrass, country rock, alt-country, outlaw country, 
+modern country, Celtic, singer-songwriter 
+●​ Jazz & Blues: bebop, smooth jazz, nu-jazz, blues rock, Delta blues, Chicago blues, jazz 
+fusion, bossa nova, swing, soul jazz 
+●​ World & Latin: bossa nova, reggaeton, cumbia, afrobeats, flamenco, raï, reggae, 
+dancehall, salsa, bachata, Latin 
+●​ Classical & Cinematic: orchestral, neoclassical, film score, baroque, minimalist, opera, 
+cinematic 
+
+--- PAGE 7 ---
+10. Genre Fusion Pairs (Cặp đôi kết hợp thể loại) 
+Cặp đôi giá trị cao (Nên dùng cùng nhau) 
+Genre A 
+Genre B 
+Sức mạnh / Ghi chú 
+Rap 
+Trap 
+Cặp đôi cùng tồn tại mạnh mẽ 
+nhất 
+Lo-fi 
+Chill 
+Sự kết hợp lo-fi chủ đạo 
+Metal 
+Rock 
+Mỏ neo cốt lõi cho nhạc metal 
+Orchestral 
+Epic 
+Điểm rơi hoàn hảo cho nhạc 
+Cinematic 
+Emo 
+R&B 
+Sự kết hợp dòng emo đỉnh nhất 
+Soul 
+R&B 
+Cặp đôi hòa quyện tự nhiên 
+Synthwave 
+Synth 
+Mỏ neo cốt lõi cho synthwave 
+House 
+Deep 
+Tiêu chuẩn cho nhạc Deep 
+House 
+Folk 
+Acoustic 
+Mỏ neo cho nhạc Folk 
+Jazz 
+Funk 
+Cặp đôi Jazz tự nhiên 
+Anti-Pairs (Cặp bài trùng kị nhau - TRÁNH dùng vì gây loạn) 
+●​ Cinematic + Dark (Khả năng tương thích gần như bằng 0) 
+●​ Opera + Melodic 
+●​ Drum and Bass + Funk (Khả năng tương thích cực thấp) 
+11. Tempo, Key & Time Signature (Tốc độ, Tông & 
+Nhịp) 
+⚠️ Điền vào ô Style Prompt, KHÔNG điền vào khung lời bài hát (lyrics). 
+Bảng tra cứu BPM (Tốc độ) 
+BPM 
+Cảm giác 
+Ví dụ thể loại 
+60-70 
+Rất chậm 
+Ballads, ambient, drone 
+73-77 
+Nhịp đi bộ 
+Lo-fi hip hop 
+86-97 
+Trung bình 
+Pop, indie, folk 
+98-109 
+Hơi nhanh 
+Country, R&B 
+109-132 
+Nhanh / Sáng sủa 
+Pop, rock, house 
+130-160 
+Nhanh 
+Punk, DnB, EDM 
+160-220 
+Rất nhanh 
+Thrash, DnB, speed metal 
+Cú pháp điền chính xác BPM: 128 BPM hoặc 140 BPM 
+Bảng tra cứu Tông (Key & Scale) 
+Cảm giác 
+Key (Tông) 
+Ghi chú 
+Tối tăm, hung hãn, trap 
+D minor, B minor 
+Hầu hết nhạc trap viết ở tông 
+Thứ (minor) 
+
+--- PAGE 8 ---
+Cảm giác 
+Key (Tông) 
+Ghi chú 
+Tươi sáng, Pop vui vẻ 
+C major, G major 
+Âm thanh sạch, rộng mở 
+Sử thi, hùng tráng 
+E minor, A minor 
+Điểm rơi hoàn hảo cho nhạc 
+giao hưởng 
+Jazz, mượt mà đầy tâm trạng 
+Bb major, Eb major, F major 
+Tiêu chuẩn nhạc Jazz 
+Bí ẩn, đậm chất điện ảnh 
+C# minor, F# minor 
+Các tông hiếm gặp giúp tăng 
+sự kịch tính 
+Blues, mộc mạc 
+A, E, G 
+Các tông tự nhiên của nhạc 
+Blues 
+Cú pháp điền: "in A minor", "C major", "Phrygian dominant" 
+Tông & Điệu thức lạ (Dành cho kết quả độc đáo) 
+●​ Phrygian dominant (E) - tối tăm, huyền bí kiểu Tây Ban Nha 
+●​ Hungarian minor (C#) - kịch tính, giống nhạc dân gian 
+●​ D Mixolydian - mang âm hưởng blues, rộng mở 
+●​ Dorian - tông thứ kiểu jazz, sâu lắng 
+●​ Whole-tone - như trong mơ, bồng bềnh 
+●​ Pelog (approximate) - âm hưởng Indonesia, kỳ ảo thế giới khác 
+●​ Microtonal 24-TET - bảng màu vi tông (quarter-tone) tinh tế 
+Time Signature & Groove (Số chỉ nhịp & Nhịp điệu) 
+●​ 3/4 - Cảm giác điệu Waltz (nhạc van-xơ) 
+●​ 4/4 - Tiêu chuẩn (Mặc định) 
+●​ 6/8 - Nhịp phách phức hợp, cảm giác móc ba 
+●​ 7/8 - Nhịp dị, lập dị, cấp tiến, căng thẳng 
+●​ "medium swing" - Nhịp đưa nôi kiểu Jazz swing 
+●​ "laid-back shuffle" - Nhịp groove của nhạc Blues 
+●​ "half-time feel" - Cảm giác nhịp bị chậm đi một nửa 
+●​ "double-time feel" - Cảm giác nhịp nhanh lên gấp đôi 
+12. Mood & Energy Tags (Cảm xúc & Năng lượng) 
+Mood Tags (Thẻ cảm xúc) 
+●​ [Uplifting] - Tích cực, truyền cảm hứng 
+●​ [Melancholic] - U sầu, phản chiếu tâm trạng 
+●​ [Haunting] - Ma mị, bí ẩn 
+●​ [Dark] - U ám, điềm rợn 
+●​ [Joyful] - Vui tươi, ăn mừng 
+●​ [Nostalgic] - Hoài niệm, tiếc nuối 
+●​ [Romantic] - Lãng mạn, dịu dàng 
+●​ [Intense] - Mạnh mẽ, kịch tính 
+●​ [Dreamy] - Mơ màng, sương khói 
+●​ [Peaceful] - Bình yên, thanh thản 
+●​ [Anxious] - Căng thẳng, bồn chồn 
+●​ [Euphoric] - Hân hoan, ngất ngây 
+●​ [Aggressive] - Hung hãn, đối đầu 
+
+--- PAGE 9 ---
+●​ [Playful] - Vui nhộn, tinh nghịch 
+●​ [Epic] - Hùng vĩ, anh hùng 
+●​ [Bittersweet] - Vừa ngọt ngào vừa đắng cay 
+●​ [Triumphant] - Khải hoàn 
+●​ [Somber] - Nghiêm trang, u buồn 
+Energy Tags (Thẻ năng lượng) 
+●​ [High Energy] / [Energy: High] - Năng lượng tối đa 
+●​ [Medium Energy] / [Energy: Medium] - Vừa phải 
+●​ [Low Energy] / [Energy: Low] - Tối giản, nhẹ nhàng 
+●​ [Chill] - Thư giãn, thong thả 
+●​ [Driving] - Thúc giục, lao về phía trước 
+●​ [Building] / [Energy: Building] - Căng thẳng tăng dần 
+●​ [Explosive] - Bùng nổ bất ngờ 
+●​ [Frantic] - Hỗn loạn, dồn dập 
+●​ [Steady] - Năng lượng đều đặn ổn định 
+Định dạng mở rộng của V5: [Mood: Euphoric], [Atmosphere: Cyberpunk], [Vibe: Midnight 
+drive]. Cú pháp key:value hoạt động rất tốt ở bản V5. 
+13. Structure Tags (Thẻ cấu trúc bài hát) 
+Đặt ở một dòng riêng biệt, nằm TRÊN đoạn lời bài hát mà thẻ đó áp dụng. 
+Phân đoạn chính (Primary Sections) 
+●​ [Intro] (Mở đầu) 
+●​ [Verse] (Đoạn phiên khúc / Đoạn lời chính) 
+●​ [Pre-Chorus] (Tiền điệp khúc) 
+●​ [Chorus] (Điệp khúc) 
+●​ [Post-Chorus] (Sau điệp khúc) 
+●​ [Bridge] (Đoạn cầu nối) 
+●​ [Outro] (Kết bài) 
+●​ [Hook] (Đoạn đắt giá) 
+●​ [Refrain] (Điệp khúc ngắn/Điệp ngữ) 
+●​ [Verse 1] [Verse 2] [Verse 3] 
+Phân đoạn nhạc cụ / Biến động (Dynamic / Non-Vocal Sections) 
+●​ [Instrumental] - Đoạn nhạc cụ dạo 
+●​ [Instrumental Break] - Đoạn nghỉ nhạc cụ ngắn 
+●​ [Build Up] - Đoạn đẩy nhịp cao trào 
+●​ [Guitar Solo] - Solo Guitar 
+●​ [Drum Break] - Đoạn trống độc diễn nghỉ 
+●​ [Piano Solo] - Solo Piano 
+●​ [Bass Drop] - Đoạn thả Bass 
+●​ [Breakdown] - Đoạn dập nhạc, giảm nhạc cụ tạo khoảng lặng 
+●​ [Drop] - Đoạn cao trào bùng nổ (EDM) 
+●​ [Fade Out] - Nhạc nhỏ dần rồi tắt 
+●​ [Fade In] - Nhạc to dần lên từ đầu 
+
+--- PAGE 10 ---
+●​ [Silence] - Yên lặng hoàn toàn 
+●​ [Tag] - Đoạn vĩ thanh / Câu đuôi ngắn gọn 
+●​ [Interlude] - Nhạc dạo giữa bài 
+●​ [Call and Response] - Hát đối đáp 
+●​ [End] - Kết thúc bài hát hẳn 
+Thẻ cấu trúc nâng cao (Advanced Structure Tags - v4+/v5) 
+●​ [Final Chorus] - Đoạn điệp khúc cuối cao trào nhất (V4+) 
+●​ [Chorus x2] - Lặp lại điệp khúc hai lần (V4+) 
+●​ [Outro: Fade out] - Kết bài nhỏ dần rõ ràng (V4+) 
+●​ [Outro: Big finish] - Kết bài hoành tráng, to dần đỉnh điểm (V4+) 
+●​ [Callback: Chorus melody] - Nhắc lại giai điệu của đoạn điệp khúc trước đó (Chỉ V5) 
+●​ [Hook Loop] - Đoạn hook ngắn phù hợp để làm vòng lặp lặp đi lặp lại (V4+) 
+●​ [Beat switch] - Chuyển đổi nhịp điệu / tốc độ / cảm giác nhịp (V4+) 
+●​ [Hook first] - Mở đầu bằng đoạn Hook trước khi vào Verse (Nâng cao) 
+●​ [Emotional release] - Khoảnh khắc bùng nổ cảm xúc cao độ (Ballads, pop) 
+●​ [Band drop-out before final chorus] - Toàn bộ ban nhạc dừng lại trước điệp khúc cuối để 
+tạo bất ngờ (Nâng cao) 
+14. Instrument Tags (Thẻ nhạc cụ) 
+Chỉ nên ghi tối đa 2-4 nhạc cụ chính, viết nhiều hơn sẽ làm AI bị rối. 
+Phím & Nhạc cụ điện tử (Keys & Synths) 
+[Grand Piano], [Rhodes], [Wurlitzer], [Organ], [Hammond Organ], [Harpsichord], [Moog], [Moog 
+Synth], [Analog Synth], [Pad], [Synth Pad], [Lead Synth], [Synth Stabs], [Arpeggiated Synth], 
+[Supersaw], [Acid Bass], [Mellotron], [Accordion] 
+Đàn dây & Guitar (Guitars & Strings) 
+[Acoustic Guitar], [Electric Guitar], [Distorted Guitar], [Classical Guitar], [Bass Guitar], [Slap 
+Bass], [Upright Bass], [Synth Bass], [Violin], [Cello], [Strings], [String Quartet], [Harp], [Ukulele], 
+[Banjo], [Mandolin], [Sitar] 
+Trống & Bộ gõ (Drums & Percussion) 
+[808], [808 Bass], [808 sub bass], [Trap Drums], [Live Drums], [Acoustic Drums], [Electronic 
+Drums], [Breakbeat], [Drum Machine], [TR-909], [Blast beats], [Double bass drums], [Fast 
+gallop], [Brush Drums], [Cinematic Percussion], [Tabla], [Taiko Drums], [Bongos], [Congas], 
+[Claps], [Snare Roll], [Timpani], [Shakers], [Gong] 
+Kèn & Bộ hơi (Brass & Wind) 
+[Saxophone], [Saxophone Solo], [Tenor Sax], [Alto Sax], [Trumpet], [Trombone], [French Horn], 
+[Brass Section], [Brass Stabs], [Flute], [Clarinet], [Harmonica], [Oboe], [Bagpipes], [Didgeridoo] 
+Dàn nhạc / Điện ảnh (Orchestral/Cinematic) 
+
+--- PAGE 11 ---
+[Orchestra], [Full Orchestra], [Chamber Orchestra], [Strings Section], [Timpani], [Choir], 
+[Cinematic], [Wide stereo pads], [Tremolo guitar] 
+Các tổ hợp độc lạ (Cho kết quả bất ngờ) 
+●​ Nyckelharpa modular synth + tabla 
+●​ Glass harmonica + prepared piano bowed guitar 
+●​ Kora analog bass bowed vibraphone 
+●​ Shamisen orchestral brass circuit-bent organ 
+●​ Toy piano tape-delay guitar bowed metal 
+●​ Mbira tape-saturated Rhodes ambient noise bed 
+●​ Microtonal qanun ambient granular synth + shakers 
+15. Production & Texture Tags (Sản xuất & Chất âm) 
+Tính chất bản phối (Mix Character) 
+●​ [Lo-fi] - Ấm, chất lượng giảm, có tiếng nổ đĩa than 
+●​ [Hi-fi] - Sạch sẽ, bóng bẩy 
+●​ [Gritty] - Thô ráp, vỡ méo tiếng (distorted) 
+●​ [Raw] - Không qua xử lý, cảm giác như diễn live mộc 
+●​ [Lush] - Đầy đặn, dày dặn, mượt mà 
+●​ [Sparse] - Tối giản, không gian thoáng đãng 
+●​ [Tape-Saturated] - Chất âm analog ấm áp 
+●​ [Vinyl Crackle] / [Vinyl Hiss] - Tiếng nổ/xì của đĩa than 
+●​ [Atmospheric] - Rộng mở, đậm tính không gian 
+●​ [Punchy] - Chắc gọn, lực đập mạnh (nhịp trống) 
+●​ [Wide Stereo] - Không gian âm thanh nổi (Stereo) mở rộng rộng rãi 
+●​ [Warm] - Âm thanh ấm áp 
+●​ [Cold] - m thanh lạnh lẽo, khô khốc điện tử 
+●​ [Saturated] - m thanh nén vỡ nhẹ, bão hòa 
+●​ [Clean] - m thanh sạch sẽ, rõ ràng 
+●​ [Modern pop polish] - Độ bóng bẩy của nhạc Pop đương đại 
+Thẻ hiệu ứng kỹ thuật (Effect Tags) 
+●​ [Effect: Lo-fi] - Tiếng nổ đĩa than bám bụi 
+●​ [Effect: Reverb: Hall] - Tiếng vang không gian hội trường lớn 
+●​ [Effect: Delay: Ping-pong] - Tiếng vang nảy qua lại trái/phải stereo 
+●​ [Effect: Distortion] - Cắt ngọn âm thanh gắt (Heavy clipping) 
+●​ [Effect: Sidechain] - Tiếng nhấp nhô theo nhịp trống kích (House) 
+●​ [Effect: Bitcrusher] - Giảm chất lượng kỹ thuật số, âm thanh 8-bit 
+●​ [Effect: Autopan] - m thanh tự động đảo qua trái/phải 
+●​ [Effect: Radio Filter] - m thanh nghẹt loa nhỏ như radio 
+●​ [Sidechained synth bass] - Tiếng bass điện tử nhấp nhô kiểu EDM 
+●​ [Layered white noise riser] - Tiếng sóng tiếng ồn trắng tăng dần để tạo cao trào 
+●​ [Sub drop impact] - Tiếng thả bom bass siêu trầm bùng nổ 
+●​ [Stereo delay tail] - Tiếng đuôi vang stereo rộng dần rồi tắt 
+Thẻ hiệu suất sản xuất (Production Performance Tags) 
+
+--- PAGE 12 ---
+●​ [Reverb Heavy] - m thanh ngập tiếng vang 
+●​ [Room Sound] - Tiếng vang tự nhiên của phòng thu 
+●​ [Close-mic] - Đặt mic rất sát, giọng mộc, khô, rõ ràng 
+●​ [Distant] - m thanh xa xăm, thoáng đãng 
+●​ [Radio-ready] - Bản phối bóng bẩy chuẩn phát radio 
+●​ [Compressed] - Kiểm soát độ động âm thanh chắc chắn 
+●​ [Sidechained] - Hiệu ứng sidechain nhấp nhô 
+●​ [Mono] - m thanh tập trung ở chính giữa 
+●​ [Palm-muted guitars] - Đánh guitar ghìm lòng bàn tay, tạo nhịp chắc, đanh gọn 
+●​ [Pinch harmonics] - Kỹ thuật rít guitar điện 
+●​ [Whammy bar bends] - Kỹ thuật nhấn cần nhún guitar 
+●​ [Pedal steel guitar] - Tiếng đàn guitar thép đặc trưng nhạc Country 
+16. Atmosphere & Sound FX (Không gian & Tiếng 
+động) 
+m thanh môi trường (Environmental Sounds) 
+●​ [Rain] - Tiếng mưa rơi 
+●​ [Thunder] - Tiếng sấm chớp 
+●​ [Wind] - Tiếng gió thổi 
+●​ [Ocean Waves] - Tiếng sóng biển 
+●​ [Birdsong] - Tiếng chim hót 
+●​ [Crickets] - Tiếng dế kêu ban đêm 
+●​ [Forest] - m thanh trong rừng 
+●​ [Fire crackling] - Tiếng lửa trại tí tách 
+●​ [City ambience] - Tiếng phố thị ồn ào 
+Đám đông & Tiếng người (Crowd & Human Sounds) 
+●​ [Crowd] / [Crowd noise] - Tiếng khán giả nói chung 
+●​ [Applause] - Tiếng vỗ tay 
+●​ [Cheering] - Tiếng reo hò cuồng nhiệt của đám đông 
+●​ [Distant chanting] - Tiếng hô vang vọng từ xa 
+●​ [Stadium ambience] - Không gian vận động trường lớn đầy người 
+●​ [Laughter] / [Audience laughing] - Tiếng cười 
+●​ [Whistling] - Tiếng huýt sáo theo giai điệu 
+●​ [Sighs] - Tiếng thở dài 
+m thanh cơ khí & Điện tử (Mechanical & Electronic Sounds) 
+●​ [Static] - Tiếng nhiễu sóng (nhiễu trắng) 
+●​ [Radio Tuning] - Tiếng rà đài radio 
+●​ [Record scratch] - Tiếng chà đĩa than (DJ scratch) 
+●​ [Phone ringing] - Tiếng chuông điện thoại reo 
+●​ [Beeping] - Tiếng bíp bíp điện tử 
+●​ [Bell dings] - Tiếng chuông reng nhỏ 
+●​ [Bleep] - Tiếng bíp che từ tục tĩu (censor bleep) 
+
+--- PAGE 13 ---
+Thẻ hiệu ứng nhạc lý (Musical Effect Tags) 
+●​ [Silence] - Yên lặng hoàn toàn (tạo khoảng lặng kịch tính) 
+●​ [Fade] - m lượng nhỏ dần 
+●​ [Stop] - Dừng nhạc đột ngột 
+●​ [Drum fill transition into chorus] - Trống báo (drum fill) để chuyển sang đoạn điệp khúc 
+●​ [Smooth crossfade intro to verse] - Chuyển tiếp mượt mà từ đoạn intro vào đoạn verse 
+17. Advanced: Pipe Stacking (Xếp chồng thẻ nâng 
+cao) 
+Bạn có thể xếp chồng nhiều thẻ lệnh bằng cách dùng ký tự | bên trong một dấu ngoặc vuông 
+duy nhất. Ký tự này hoạt động như toán tử "VÀ" (AND). 
+Định dạng: [yếu tố cốt lõi | kỷ nguyên/thể loại | tông màu/đặc tính bản phối | chi tiết] 
+⚠️ Quy tắc: 
+●​ Luôn bắt đầu bằng yếu tố cốt lõi hoặc nhãn phân đoạn. 
+●​ Tối đa 4-6 từ bổ nghĩa (modifiers) cho mỗi chuỗi chồng thẻ để tránh bị nhiễu âm thanh. 
+●​ Sử dụng mỏ neo thời gian để tăng độ chính xác của thể loại (ví dụ: 60s, 80s, 90s). 
+●​ Mỗi phân đoạn nên có một chuỗi xếp chồng riêng biệt. 
+Ví dụ thực tế: 
+●​ [Verse | 60s jangly guitar rhythm | clean Fender tone | bright treble EQ | light spring 
+reverb] 
+●​ [Guitar solo | 80s glam metal lead guitar | heavy distortion | pinch harmonics | wide stereo] 
+●​ [Drop | sidechained synth bass | layered white noise riser | sub drop impact | stereo delay 
+tail] 
+●​ [Chorus | anthemic chorus | stacked harmonies | modern pop polish | bass drop] 
+●​ [Verse | autotuned delivery | tuned male vocal | light reverb | stereo slapback] 
+Thẻ danh mục cấp độ nhà sản xuất (Producer-Level Category Tags) 
+●​ [Instrumentation: overdriven punk guitar | palm-muted power chords | fast downstrokes] 
+●​ [Vocal: raspy lead vocal | gang shouts on last line] 
+●​ [Mix: mono bass, stereo guitar | slight room reverb] 
+Diễn dịch Thẻ Nhạc lý sang lệnh Suno (Theory Tag Translation) 
+Thể loại (Genre) 
+Yếu tố nhạc lý (Theory 
+Element) 
+Thẻ lệnh Suno (Suno Tag) 
+Classic Rock 
+Đàn guitar sáng rè, nhịp 
+backbeat mạnh 
+`[60s jangly guitar rhythm 
+Glam Metal 
+Rít guitar (pinch harmonics), 
+cần nhún 
+`[80s glam metal lead guitar 
+Thrash Metal 
+Nhịp trống dồn (gallop), nốt 
+móc kép nhanh 
+`[thrash metal 
+Death Metal 
+Giọng gầm rú (growl), trống 
+dồn dập gắt 
+`[death growl 
+Grunge 
+Động lực âm thanh To/Nhỏ thất 
+thường 
+`[grunge 
+Shoegaze 
+Bức tường tiếng vang (wall of `[shoegaze 
+
+--- PAGE 14 ---
+Thể loại (Genre) 
+Yếu tố nhạc lý (Theory 
+Element) 
+Thẻ lệnh Suno (Suno Tag) 
+reverb) 
+Lo-fi Hip Hop 
+Tiếng xè đĩa than, sample nhạc 
+jazz êm dịu 
+`[lo-fi hip hop 
+Deep House 
+Nhịp dậm chân sidechain, kick 
+4-on-the-floor 
+`[deep house 
+Synthwave 
+Sóng răng cưa supersaw, 
+analog, phong cách 80s 
+`[synthwave 
+Trap 
+Trống 808, hi-hats xếp bộ ba 
+(triplets) 
+`[trap 
+Gospel 
+Hợp xướng SATB, hát đối đáp `[gospel 
+Bossa Nova 
+Đàn dây nylon guitar, nhịp đung 
+đưa 
+`[bossa nova 
+Flamenco 
+Điệu thức Phrygian 
+`[flamenco 
+Cinematic 
+Trống Taiko, tiếng dây violin 
+đẩy cao trào 
+`[cinematic 
+18. Advanced: Making Unique Songs (Tạo bài hát độc 
+lạ) 
+Chọn một hoặc nhiều mục từ mỗi danh mục sau đây để xây dựng một prompt độc nhất vô nhị. 
+Tông / Điệu thức / Hệ lên dây (Scales/Tunings) 
+●​ Pelog (Indonesian) 
+●​ Phrygian dominant 
+●​ Hungarian minor (double harmonic) 
+●​ Whole-tone 
+●​ 19-tone equal temperament 
+●​ Pentatonic + chromatic inflections 
+●​ Microtonal 24-TET centered on F 
+Nhịp điệu & Số chỉ nhịp (Time Signatures / Rhythms) 
+●​ 4/4 with metric modulation 
+●​ 5/4 groove (Nhịp bất đối xứng nhưng vẫn nhảy được) 
+●​ 7/8 driving pattern (2+2+3) 
+●​ Alternating 3/4 -> 7/8 each phrase (Thay đổi nhịp liên tục qua từng câu) 
+●​ Free rubato sections + strict polyrhythmic chorus (3:2) 
+●​ Constant tempo, groove subdivided (16th-triplets) 
+●​ Polyrhythmic 4:3 overlay 
+Cách tiếp cận giọng hát độc đáo (Vocals - Unusual Approaches) 
+●​ Female soprano, airy and breathy 
+●​ Female mezzo with raw timbre 
+●​ Male baritone, intimate close-mic 
+●​ Child choir, lightly dissonant 
+
+--- PAGE 15 ---
+●​ Spoken-word actor, dry and present 
+●​ Vocoded processed voice (analog-style) 
+●​ Granular-sliced vocal textures (non-lyrical) 
+●​ Whispered bilingual vocal lines (Thì thầm song ngữ) 
+●​ Sprechstimme/half-sung theatrical voice (Nửa nói nửa hát kiểu kịch nghệ) 
+●​ Wordless vocalise (melisma + textures) 
+●​ Field-recorded vocal snippets (found audio) 
+●​ Androgynous falsetto, ethereal, fragile 
+Xử lý giọng hát độc lạ (Vocal Processing) 
+●​ Dry acoustic, minimal reverb, present (Giọng mộc hoàn toàn, siêu gần) 
+●​ Distant, lush reverb + reverse delays (Xa xăm, ngập tiếng vang + vọng ngược) 
+●​ Formant-shifted + granular vocal stuttering (Biến đổi formant + giọng lắp bắp hạt nhỏ) 
+●​ Harmonized with microtonal intervals 
+●​ Vocoder/hard-sync synth doubling 
+Nguồn văn bản làm lời nhạc (Lyrics / Text Sources) 
+●​ Ý thơ nguyên bản mang hình ảnh trừu tượng của những giấc mơ (dream imagery). 
+●​ Nhật ký/thư từ cổ được tìm thấy (found text: old letters/diaries). 
+●​ Văn bản ghi âm từ thực địa (field-recording transcriptions - những mảnh hội thoại đời 
+thực). 
+●​ Viết tự do theo dòng ý thức vô thức (automatic writing stream). 
+●​ Một cụm từ duy nhất lặp đi lặp lại và bị méo tiếng theo thời gian. 
+●​ Không có lời nhạc, chỉ ê a nguyên âm (vowel palette only). 
+Ràng buộc Giai điệu / Cao độ (Melodic/Scale Constraints) 
+●​ Giai điệu (motif) xây dựng từ chuỗi quãng: m3 -> P4 -> tritone. 
+●​ Chỉ chuyển động liền bậc (stepwise motion), không nhảy quãng rộng hơn quãng 3 
+Trưởng (> M3). 
+●​ Nhảy quãng cực rộng với các câu nhạc ngắn. 
+●​ Các mẩu ngũ âm (pentatonic fragments) bị biến dị sau mỗi lần lặp lại. 
+●​ Giai điệu phỏng theo cao độ giọng nói thực tế (speech-to-melody). 
+●​ Tái sử dụng và dịch giọng một chuỗi 7 nốt cố định kiểu nhạc thủ tục (serial-like). 
+Bảng màu Hòa thanh / Hợp âm (Harmony/Chord Palette) 
+●​ Quãng 5 rỗng tối giản (sparse open fifths) và tiếng nền trì tục (drones). 
+●​ Các chùm hợp âm quãng 4 chồng nhau (quartal harmony clusters). 
+●​ Di chuyển tịnh tiến cả khối hợp âm chromatic + hợp âm trục chuyển tông bất ngờ. 
+●​ Vòng lặp hòa thanh điệu thức (modal vamps) chèn thêm các nốt nghịch nghịch mở rộng 
+(b9, #11). 
+●​ Giữ nguyên nốt gốc nền (drone) và liên tục thay đổi màu sắc hợp âm ở dải cao. 
+●​ Vòng công năng phi truyền thống, triệt để tránh giải kết kiểu V -> I. 
+Kết cấu & Sắp xếp phối khí (Texture / Arrangement) 
+●​ Tối giản, xếp chồng từng lớp câu nhạc (cứ mỗi 8 ô nhịp lại thêm 1 nhạc cụ). 
+
+--- PAGE 16 ---
+●​ Tiếng đệm pad dày đặc, liên tục tiến hóa vi mô (micro-variations). 
+●​ Hát đối đáp (call-and-response) giữa hai chất âm nhạc cụ khác hẳn nhau. 
+●​ Các mẫu nhịp phức hợp lồng ghép đan xen (polyrhythmic interlocking). 
+●​ Đột ngột tắt nhạc rơi vào không gian gần như im lặng rồi xây dựng lại từ đầu. 
+Biến tấu cấu trúc (Structural Quirks) 
+●​ Không dùng cấu trúc Verse-Chorus truyền thống; thay vào đó là: đối thoại giữa các motif 
+giai điệu (motif dialogue). 
+●​ Sáng tác xuyên suốt (through-composed) chia thành 4 phân cảnh riêng biệt (crescendo -> 
+decay). 
+●​ Vòng lặp lặp lại với số chỉ nhịp thay đổi dần dần. 
+●​ Các đoạn nhạc ngắn ngăn cách bởi các lời thoại nói xen giữa. 
+●​ Cấu trúc đảo ngược thời gian (đưa cái kết bài lên đầu tiên). 
+●​ Nhạc ambient không có Verse, chỉ có duy nhất một giai điệu giọng hát lặp lại. 
+Hương vị sản xuất (Production Flavors) 
+●​ Chất âm băng cassette cũ bão hòa, có độ méo giật nhịp (wow/flutter). 
+●​ m thanh kỹ thuật số siêu sạch, khoảng headroom lớn. 
+●​ Synth analog cổ điển, dải trầm trầm ấm. 
+●​ Tiếng ồn môi trường thực địa (field-recording) lồng dưới nền sâu. 
+●​ Cắt nhỏ và tái tổng hợp hạt âm thanh (granular resynthesis) để tạo chất âm mới. 
+●​ Xử lý transient gắt, tiếng vang dội ngược nhanh kiểu percussive slapback. 
+●​ Siêu sạch, không gian stereo cực rộng, nhạc cụ hoán đổi vị trí Trái - Phải qua từng câu 
+nhạc. 
+Kiểm soát tính "Người hóa" (Humanization Controls) 
+●​ Thêm 12-20% độ lệch nhịp ngẫu nhiên (timing jitter) trên các nhạc cụ đệm nền. 
+●​ Biến thiên lực gõ (velocity variance): ±15% trên các nốt lặp lại. 
+●​ Độ trôi cao độ vi tông (microtonal pitch drift) lên tới ±25 cents trên các tiếng pad đệm. 
+●​ Bỏ ngẫu nhiên 1 trong 16 nốt nhạc để tạo cảm giác "thở" tự nhiên. 
+●​ Tạo 2 bản thu giống nhau rồi pan nhẹ sang hai bên loa Trái/Phải. 
+●​ Sử dụng hai mô hình AI khác nhau và trộn kết quả theo tỷ lệ 60:40. 
+Ràng buộc Tránh né (Rules "Avoid" - Loại bỏ lối mòn) 
+●​ Không dùng tiếng kích dậm chân liên tục four-on-the-floor, không dùng đoạn drop EDM 
+sáo rỗng. 
+●​ Không dùng vòng hợp âm dễ đoán kiểu I-V-vi-IV. 
+●​ Tránh dán nhãn cấu trúc tiêu chuẩn kiểu [Verse], [Chorus]. 
+●​ Không dùng các chuỗi hi-hat dồn nhịp 808 quen thuộc của nhạc Trap. 
+●​ Không bắt chước các nghệ sĩ lớn đã quá nổi tiếng, hãy sử dụng các tài liệu tham khảo ẩn 
+danh, ít người biết. 
+💡 Ví dụ về một Prompt độc lạ hoàn chỉnh: 
+Create a melancholic song in Phrygian dominant (E), 7/8 pulse, 78 BPM, featuring female 
+soprano (airy) singing found-diary text; instrumentation: nyckelharpa analog bass bowed 
+
+--- PAGE 17 ---
+vibraphone; motif constraint: interval sequence m3 P4 tritone repeated and warped each 
+chorus; texture: sparse layering, add one layer every 8 bars; production: vintage analog warmth 
+light tape flutter; humanize: 18% timing jitter on accompaniment, microtonal pad drift ±15 cents; 
+avoid I-V-vi-IV and standard EDM tropes. 
+19. Genre Recipe Stacks (Công thức xếp thẻ theo thể 
+loại) 
+EDM / Festival Banger (Nhạc lễ hội sôi động) 
+[Intro | wide stereo pads | layered white noise riser | atmospheric]​
+[Verse | melodic hook | airy female vocal | reverb tail | octave harmony stack]​
+[Build-Up | riser build | synth stabs | kick sidechain build]​
+[Drop | explosive drop | sidechained synth bass | sub drop impact | stereo delay tail]​
+[Chorus | chant vocals | crowd-style vocals | wide stereo]​
+ 
+Pop / Radio Hit (Nhạc Pop đại chúng bắt tai) 
+[Intro | hook first | melodic hook | bright vocal EQ | layered harmonies]​
+[Verse | emotional build-up | warm piano chords | subtle kick pulse]​
+[Pre-Chorus | riser build | stacked harmonies | wide stereo pads | light snare reverb]​
+[Chorus | anthemic chorus | autotuned delivery | modern pop polish]​
+ 
+Trap / Hip-Hop 
+[Intro | autotuned delivery | tuned male vocal | light reverb]​
+[Verse | chant hook | layered ad-libs | stereo panning echoes]​
+[Chorus | syncopated drop | 808 sub bass | off-beat hi-hats | snare rolls]​
+ 
+Pop Punk / Alt Rock 
+[Verse | raspy lead vocal | youthful tone | light vocal grit]​
+[Pre-Chorus | emotional build-up | palm-muted guitars]​
+[Chorus | anthemic chorus | stacked harmonies | palm-muted guitars | driving kick-snare beat]​
+[Bridge | bridge with drop | distorted power chords | bass slide-in]​
+ 
+Country / Party Rock 
+[Intro | spoken word verse | warm baritone EQ | slight drawl]​
+[Verse | banjo plucks | acoustic strums | light tambourine]​
+[Chorus | anthemic chorus | stacked harmonies | pedal steel guitar | light snare reverb]​
+ 
+Cinematic / Ambient (Nhạc thư giãn, tập trung) 
+
+--- PAGE 18 ---
+[Intro]​
+[Vocal drone]​
+(deep resonant)​
+Whispers...​
+[Verse | cinematic vocal pacing | sparse instrumentation | wide stereo pads | piano]​
+[Build | string swells | taiko drums | rising orchestral tension]​
+[Chorus | full orchestra | choir vocals | epic | emotional release]​
+[Outro | fade out | ambient rain | distant echo]​
+ 
+Hard Rock / Metal 
+[Intro | power riff | heavy distortion | palm-muted guitar | drum fill]​
+[Verse | raspy lead vocal | overdriven guitar | bass driving eighth notes]​
+[Pre-Chorus | build-up | rising tension | cymbal crescendo]​
+[Chorus | anthemic chorus | stacked harmonies | full band | crowd-style vocals]​
+[Solo | guitar solo | 80s glam metal lead guitar | heavy distortion | wide stereo | whammy]​
+[Bridge | breakdown | half-time breakdown | minimal instrumentation]​
+[Final Chorus | anthemic chorus | full band return | stacked harmonies | explosive]​
+ 
+Gospel (Nhạc thánh ca/Tâm linh đầy nội lực) 
+[Intro | organ | soft choir humming]​
+[Verse | Female vocal | warm, intimate piano]​
+[Pre-Chorus | emotional build-up | stacked harmonies]​
+[Chorus | SATB gospel choir vocals | call and response | uplifting | bass drop]​
+[Bridge | spoken word | vulnerable]​
+[Final Chorus | Power Praise | full choir | organ | triumphant | explosive]​
+ 
+Duet (Song ca định dạng chuẩn ổn định) 
+●​ Style Prompt: This is a duet between [Name A] (male) and [Name B] (female), [genre], 
+[other tags] 
+●​ Lyrics field: 
+[Duet: [Name A] male and [Name B] female]​
+[Verse 1]​
+[[Name A]]​
+lyric line...​
+​
+[Chorus]​
+[Both]​
+lyric line...​
+​
+[Verse 2]​
+[[Name B]]​
+lyric line...​
+ 
+
+--- PAGE 19 ---
+20. Troubleshooting (Sửa lỗi thường gặp) 
+●​ "Ca sĩ liên tục đổi giọng ngẫu nhiên" 
+○​ 👉 Hãy dùng thẻ [Vocal Persona: stable] ở bản V5. 
+○​ 👉 Nhắc lại mô tả giọng hát chính xác trong mọi lượt tạo (generation). 
+○​ 👉 Điền cụ thể mô tả giọng vào ô Style: ví dụ "raspy male tenor, emotional delivery, 
+dry close-mic". 
+●​ "Bài hát bị lặp đi lặp lại một đoạn không chịu dừng" 
+○​ 👉 Thêm thẻ [End] ở nơi bạn muốn kết thúc bài. 
+○​ 👉 Sử dụng thẻ [Fade Out] ở phần Outro. 
+○​ 👉 Viết câu lệnh (prompt) ngắn gọn lại, ít các thẻ tạo vòng lặp. 
+●​ "Không có phần mở đầu, nhạc nhảy thẳng vào câu hát luôn" 
+○​ 👉 Thẻ [Intro] đứng một mình đôi khi không ăn lệnh. Hãy ghi thêm câu chữ "short 
+instrumental intro" vào ô Style box. 
+○​ 👉 Thử dùng thẻ [Instrumental] và để một dòng trống ngay trước thẻ [Verse 1]. 
+●​ "Thể loại nhạc (Genre) bị AI ngó lơ" 
+○​ 👉 Thể loại bắt buộc phải nằm trong ô Style box, KHÔNG viết ở khung chứa lời 
+nhạc (Lyrics). 
+○​ 👉 Chỉ dùng tối đa 2 thể loại nhạc. 
+○​ 👉 Hãy gom các tag quan trọng nhất đặt lên 20-30 từ đầu tiên của ô Style box. 
+●​ "m lượng hoặc Năng lượng của phân đoạn bị sai lệch" 
+○​ 👉 Sử dụng thẻ lệnh năng lượng rõ ràng cho từng phân đoạn: [Energy: Low] hoặc 
+[Energy: High]. 
+○​ 👉 Chèn trực tiếp các thẻ sắc thái [Soft] / [Loud] ở đầu dòng lời nhạc. 
+●​ "Giọng hát nghe quá giống robot hoặc bị phẳng lì, vô cảm" 
+○​ 👉 Thêm các tính chất đặc trưng giọng như: "raspy", "breathy", "belted". 
+○​ 👉 Chèn thêm thẻ cảm xúc trước câu hát: [Tender], [Desperate]. 
+●​ "Nhồi quá nhiều thẻ lệnh khiến bài hát hỗn loạn" 
+○​ 👉 Mục tiêu chỉ nên giữ từ 8-15 thẻ tổng cộng cho một bài. Dưới 5 thẻ = quá mơ 
+hồ; Trên 20 thẻ = loãng lệnh. 
+●​ "Kết quả nghe quá đại trà, bài nào cũng giống bài nào" 
+○​ 👉 Đổi sang các tông/điệu thức lạ (Phrygian dominant, Hungarian minor). 
+○​ 👉 Đổi các nhạc cụ phổ thông bằng các combo độc lạ (xem mục 14). 
+○​ 👉 Thêm các lệnh kiểm soát tính "Người hóa" (lệch nhịp, trôi cao độ). 
+○​ 👉 Sử dụng các lệnh phủ định (Negative prompts): "no four-on-the-floor, no stock 
+trap hi-hats". 
+○​ 👉 Lấy lời nhạc từ các nguồn độc đáo (nhật ký cổ, hình ảnh giấc mơ). 
+●​ "Không có cách nào hiệu quả" 
+○​ 👉 Hãy xóa sạch ô Style box và viết lại từ đầu, đừng cố copy một prompt đã bị lỗi. 
+○​ 👉 Thử công thức tối giản: một cảm xúc (mood) + một mức năng lượng (energy) + 
+hai nhạc cụ + thể loại nhạc + tốc độ (tempo). 
+○​ 👉 Thử chuyển đổi giữa bản v4.5 và v5/v5.5 để xem bản nào tối ưu hơn. 
+21. Copy-Paste Templates (Mẫu cấu trúc để sao chép) 
+Mẫu cấu trúc bài hát sạch sẽ (Clean Structure Template) 
+[Intro]​
+[Instrumental]​
+​
+
+--- PAGE 20 ---
+[Verse 1]​
+[Soft]​
+[Lời bài hát của bạn ở đây]​
+​
+[Pre-Chorus]​
+[Building]​
+[Lời bài hát của bạn ở đây]​
+​
+[Chorus]​
+[Powerful]​
+[Lời bài hát của bạn ở đây]​
+​
+[Verse 2]​
+[Lời bài hát của bạn ở đây]​
+​
+[Chorus]​
+[Lời bài hát của bạn ở đây]​
+​
+[Bridge]​
+[Quiet] [Intimate]​
+[Lời bài hát của bạn ở đây]​
+​
+[Chorus]​
+[Climactic]​
+[Lời bài hát của bạn ở đây]​
+​
+[Outro]​
+[Fade Out]​
+ 
+Mẫu điền ô Style Box (Style Box Template) 
+[genre], [subgenre], [tempo] BPM, [mood], [energy], [vocal description], [2-3 instruments], [mix 
+intent], [production style], no [unwanted element], no [unwanted element]​
+ 
+●​ Ví dụ thực tế điền Style Box:​
+synth-pop, 80s-inspired, 118 BPM, euphoric and nostalgic, powerful female vocals with 
+layered harmonies, analog synth pads, punchy drum machine, Moog bass, polished 
+radio-ready production, no acoustic instruments, no male vocals​
+ 
+Mẫu điều khiển sắc thái giọng hát (Vocal Control Template) 
+[Verse 1]​
+[Female Vocal] [Whispered] [Intimate]​
+(dòng lời hát thì thầm)​
+​
+[Chorus]​
+[Belted] [Powerful]​
+CÂU LỜI ĐIỆP KHÚC VIẾT HOA TOÀN BỘ ĐỂ TĂNG LỰC HÁT​
+
+--- PAGE 21 ---
+ 
+Mẫu đầu ra toàn diện (Full Output Template) 
+--- STYLE PROMPT (Điền vào ô Style) ---​
+[Primary Genre], [Secondary Genre optional], [Mood], [Key Instruments], [BPM], [Key/Scale]​
+​
+--- LYRICS (Điền vào ô Lyrics) ---​
+[Mood: X]​
+[Energy: Y]​
+​
+[Intro | stacked style tags]​
+(opening hook or atmosphere)​
+​
+[Verse 1 | stacked style tags]​
+[Vocal: style | mix]​
+lyric line...​
+lyric line...​
+​
+[Pre-Chorus | build tag]​
+lyric line...​
+​
+[Chorus | anthemic tags | energy tag]​
+hook line...​
+hook line...​
+​
+[Verse 2 | stacked style tags]​
+lyric line...​
+lyric line...​
+​
+[Bridge | contrast tag | breakdown]​
+lyric line...​
+​
+[Final Chorus | Energy: High | full band]​
+hook line...​
+hook line...​
+​
+[Outro | fade or big finish tag]​
+closing line...​
+ 
+Tóm tắt quy tắc cốt lõi (Quick Rules of Thumb) 
+1.​ Ô Style box là bản thiết kế âm thanh (giai điệu, nhạc cụ, nhịp độ). Khung Lyrics box cấu 
+thành cấu trúc bài viết và lời hát. 
+2.​ Thẻ lệnh là tín hiệu gợi ý, không phải lệnh bắt buộc tuyệt đối. Suno tính toán chúng theo 
+xác suất. Hãy luôn tạo 3-4 phiên bản để chọn lựa. 
+3.​ 20-30 từ đầu tiên trong ô Style box có trọng số nặng nhất. 
+4.​ Thẻ lệnh ngắn hoạt động tốt hơn thẻ dài (nên từ 1-3 từ cho mỗi tag). 
+5.​ Các lệnh phủ định (Negative prompts) luôn được xếp ở cuối cùng trong ô Style box. 
+
+--- PAGE 22 ---
+6.​ Duy trì sự nhất quán mô tả qua các lần tạo (generations) giúp định hình giọng "nghệ sĩ" 
+tốt hơn. 
+7.​ Dấu ngoặc đơn () luôn luôn được hát, tuyệt đối không dùng để ghi lệnh điều khiển. 
+8.​ Thẻ phân đoạn ([Verse], [Chorus], v.v.) bắt buộc phải nằm trước lời nhạc, chúng là các 
+mỏ neo định hình cấu trúc. 
+9.​ Chỉ dùng thẻ hợp xướng SATB ở đoạn điệp khúc. Lạm dụng ở mọi nơi sẽ giết chết tính 
+cao trào của bài hát. 
+10.​Bài hát song ca (Duets) cần 3 mỏ neo vững chắc: cấu trúc ở ô style prompt + thẻ 
+header ở khung lyrics + nhãn tên người hát trước mỗi phân đoạn. 

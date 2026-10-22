@@ -1,0 +1,883 @@
+--- PAGE 1 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 1
+SUNO V6
+PROMPT MASTER GUIDE
+CẨM NANG CẤU TRÚC PROMPT & TAG — BẢN TIẾNG VIỆT
+Bản hoàn chỉnh dành cho người dùng Suno v6 / v6-wild / v6-mini
+Tài liệu này được biên soạn mới dựa trên tài liệu Suno v5.5 người dùng đã cung cấp, tài liệu chính thức Suno
+v6 và các hướng dẫn cộng đồng được công bố sau khi v6 ra mắt. Những điểm nào là kinh nghiệm cộng đồng
+sẽ được ghi rõ; không coi chúng là quy tắc chính thức của Suno.
+Mục tiêu: từ một ý tưởng âm nhạc → viết được Style Prompt → viết Lyrics có cấu trúc → kiểm soát giọng,
+nhạc cụ, cao trào → sửa đúng chỗ thay vì tạo lại toàn bài.
+QUY TẮC NHỚ NHANH
+• Style = bản thiết kế âm thanh tổng thể.
+• Lyrics = cấu trúc, lời hát và chỉ dẫn cục bộ cho từng đoạn.
+• [ ] = chỉ dẫn; () = phần có khả năng được hát như backing/ad-lib theo cách định dạng của tài liệu v5.5.
+• V6 hiểu mô tả tự nhiên tốt hơn; hãy viết như một producer brief, không chỉ nhồi tag.
+• Khi kết quả gần đúng: chỉnh một phần cụ thể thay vì phá toàn bộ bài.
+Cập nhật: 16/09/2026
+
+--- PAGE 2 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 2
+MỤC. Lục
+• 1. V6 là gì và điều gì đã thay đổi
+• 2. V5.5 → V6: thay đổi tư duy prompt
+• 3. Kiến trúc prompt V6: Identity → Pulse → Players → Performance → Arc → Mix → Constraints
+• 4. Style Prompt: công thức hoàn chỉnh
+• 5. Lyrics: cấu trúc và section tags
+• 6. Vocal Control
+• 7. Emotion, dynamics và cách nhả chữ
+• 8. Duet / song ca
+• 9. Instrumentation và quan hệ giữa các nhạc cụ
+• 10. BPM, groove, key, scale và time signature
+• 11. Mood, energy và atmosphere
+• 12. Production, texture và mix intent
+• 13. Pipe stacking: dùng dấu | đúng cách
+• 14. Negative prompts / Exclude
+• 15. Tạo bài độc đáo mà không làm prompt rối
+• 16. V6, v6-wild, v6-mini: chọn model
+• 17. Simple Mode, Custom Mode và workflow
+• 18. Variety, Style Influence, Max Mode và thử nghiệm
+• 19. Multimodal prompting: text, audio, image, video
+• 20. Edit / Replace Section / Extend / Mashup / Sample
+• 21. Troubleshooting
+• 22. Bộ template Style copy-paste
+• 23. Bộ template Lyrics copy-paste
+• 24. Template duet
+• 25. Template cho nhạc Việt
+• 26. Công thức Pop / Ballad / Bolero / Vinahouse / EDM / Rock / Cinematic
+• 27. Quy trình A/B test
+• 28. Checklist trước khi bấm Create
+• 29. Các điểm KHÔNG nên coi là quy tắc chắc chắn
+• 30. Bộ prompt mẫu hoàn chỉnh
+• 31. Phụ lục tag nhanh
+• 32. Nguồn tham khảo
+
+--- PAGE 3 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 3
+1. V6 là gì và điều gì đã thay đổi
+Suno công bố v6 ngày 09/09/2026. Bộ model gồm v6, v6-wild và v6-mini. Suno mô tả v6 là model chủ
+lực thiên về độ chính xác và kết quả hoàn thiện; v6-wild thiên về khám phá, ít đoán trước hơn; v6-mini
+nhẹ và nhanh hơn. Cả ba có thể tạo tối đa 8 phút trong một lần generation theo Help Center hiện tại.
+Điểm quan trọng với người viết prompt: Suno nói v6 hiểu tốt hơn các khối ngôn ngữ mà nhạc sĩ dùng để
+mô tả vocals, instrumentation, structure, mood, references và overall feel. Vì vậy, prompt V6 nên được
+xem là một creative brief có quan hệ giữa các thành phần, thay vì chỉ là một túi tag.
+V6 còn mở rộng workflow: chỉnh một phần bài bằng ngôn ngữ tự nhiên, mashup nhiều nguồn,
+sample/isolate một phần âm thanh, và tạo nhạc từ text, audio, image hoặc video.
+Nguồn chính: Suno Introducing v6 và Suno Help Center.
+Model
+Mục tiêu
+Cách dùng thực tế
+v6
+Kiểm soát, chính xác, polished
+Bản chính để làm ca khúc cần định hướng rõ
+v6-wild
+Khám phá, bất ngờ, nhiều biến thiên
+Tìm ý tưởng/texture mới rồi mang ý hay về v6
+v6-mini
+Nhanh, nhẹ, dễ thử
+Phác thảo, thử nhiều concept, iteration nhanh
+2. V5.5 → V6: thay đổi tư duy prompt
+Tài liệu v5.5 người dùng cung cấp nhấn mạnh: front-load Style, tối đa khoảng 2 genre, 2–4 nhạc cụ
+chính, section tags đặt trước lời, negative prompts ở cuối, và tag là tín hiệu xác suất chứ không phải
+lệnh tuyệt đối. Những nguyên tắc này vẫn hữu ích như điểm xuất phát, nhưng không nên biến thành luật
+cứng của V6.
+Điểm cần nâng cấp: V6 hiểu mô tả quan hệ tốt hơn. Thay vì viết “piano, guitar, strings, bass, drums”,
+hãy nói vai trò: “warm piano carries the harmony, nylon guitar answers the vocal, soft strings widen the
+final chorus”.
+Điểm cần bỏ thói quen: không cố nhồi 20–30 tag vì nghĩ nhiều tag = nhiều kiểm soát. V6 có thể làm tốt
+hơn với một brief ngắn nhưng giàu thông tin về vai trò, chuyển động và cao trào.
+Điểm cần giữ: [ ] cho chỉ dẫn cấu trúc/sản xuất; section label trước lời; mô tả vocal nhất quán; tạo nhiều
+biến thể; và sửa từng đoạn khi có công cụ Edit.
+V5.5 mindset:
+Genre + tags + instruments + effects
+V6 mindset:
+Intent + relationships + performance + arrangement arc + mix intent + constraints
+3. Kiến trúc prompt V6: Identity → Pulse → Players
+→ Performance → Arc → Mix → Constraints
+Đây là khung làm việc thực dụng được tổng hợp từ tài liệu V5.5, tài liệu chính thức V6 và hướng dẫn
+cộng đồng sau khi V6 ra mắt. Đây KHÔNG phải cú pháp chính thức do Suno công bố.
+Khối
+Câu hỏi
+Ví dụ
+Identity
+Bài này là gì?
+Vietnamese cinematic pop ballad
+Pulse
+Nhịp và chuyển động ra sao?
+76 BPM, 6/8, slow swaying groove
+Players
+Ai/nhạc cụ nào giữ vai trò gì?
+high female lead, warm piano, đàn tranh, soft cello
+Performance
+Ca sĩ hát thế nào?
+intimate verse, breathy opening, powerful belted chorus
+Arc
+Năng lượng đi từ đâu đến đâu?
+sparse verse → rising pre-chorus → explosive final chorus
+Mix
+Chất âm và không gian?
+warm, close vocal, wide strings, polished but organic
+
+--- PAGE 4 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 4
+Khối
+Câu hỏi
+Ví dụ
+Constraints
+Không muốn gì?
+no male lead, no EDM drop, no aggressive trap hats
+Mẹo: nếu prompt dài, hãy ưu tiên 7 khối trên theo thứ tự. Nếu prompt ngắn, giữ Identity + Pulse +
+Players + Arc là đủ để có định hướng rõ.
+4. Style Prompt: công thức hoàn chỉnh
+Style là nơi mô tả DNA âm thanh. Với workflow của bạn, nên giữ phần lệnh bằng tiếng Anh và đặt trong [
+] khi bạn muốn chúng được hiểu như tag/chỉ dẫn. Tuy nhiên, V6 cũng hiểu plain-language prompt, nên
+không cần biến mọi câu thành tag.
+STYLE MASTER TEMPLATE
+[Primary Genre], [optional Secondary Genre], [Tempo/BPM], [Mood], [Vocal Identity], [2–4 Key Instruments],
+[Performance], [Arrangement Arc], [Production/Mix], [Avoid/Exclude]
+V6 PRODUCER-BRIEF TEMPLATE
+Vietnamese cinematic pop ballad, 76 BPM, 6/8, melancholic but hopeful; high female lead vocal, airy and
+intimate in verses, controlled belting in choruses; warm piano carries harmony, đàn tranh adds Vietnamese
+color, soft cello supports emotional lifts; sparse opening, gradual build, wide final chorus; warm close vocal,
+natural dynamics, polished cinematic mix; no male lead, no EDM drop.
+Không cần dùng đúng mọi thành phần. Nếu bài đang bị “loãng”, cắt Style về 1 genre chính + 1 mood +
+vocal + 2–3 nhạc cụ + arc + 1–2 ràng buộc.
+5. Lyrics: cấu trúc và section tags
+Tài liệu v5.5 cho rằng section tags nên đứng trước phần lời mà chúng điều khiển. Đây là cách tổ chức
+hợp lý để V6 đọc cấu trúc. Suno không công bố một danh sách tag bắt buộc duy nhất cho V6, vì vậy hãy
+xem các tag dưới đây là các chỉ dẫn thường dùng, không phải API syntax.
+[Intro]
+[Instrumental]
+[Verse 1]
+[Female Vocal | Intimate | Breathier]
+Lời bài hát...
+[Pre-Chorus]
+[Building | Rising]
+Lời bài hát...
+[Chorus]
+[Powerful | Wide Harmonies]
+CÂU HOOK CHÍNH...
+[Verse 2]
+Lời bài hát...
+[Bridge]
+[Quiet | Vulnerable]
+Lời bài hát...
+[Final Chorus]
+[Climactic | Full Band | Stacked Harmonies]
+HOOK LẶP LẠI...
+[Outro]
+[Soft | Fade Out]
+Đừng dùng quá nhiều section tag trong một đoạn. Mỗi section nên trả lời một câu: đoạn này là gì, năng
+lượng ra sao, giọng hát thế nào, nhạc cụ nào nổi bật?
+
+--- PAGE 5 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 5
+6. Vocal Control
+Mục tiêu
+Từ khóa tiếng Anh gợi ý
+Giới tính / register
+female lead, male lead, soprano, alto, tenor, baritone
+Chất giọng
+airy, breathy, warm, raspy, husky, clear, intimate, raw
+Kỹ thuật
+falsetto, belting, melismatic, spoken word, chant, crooning
+Khoảng cách mic
+close-mic, intimate, dry vocal, distant vocal
+Bè
+backing vocals, stacked harmonies, octave harmony, call and response
+Cao trào
+controlled belting, emotional release, anthemic chorus
+Không lời
+humming, vocalise, wordless vocal textures, acapella
+Để giọng nữ cao nhưng không chói: dùng “high female lead, airy upper register, warm lower mids,
+controlled belting”. Để có nam điểm xuyết: “occasional warm male backing accents” thay vì “male
+duet” nếu không muốn hai giọng ngang vai.
+Tài liệu v5.5 cũng khuyến nghị giữ mô tả vocal nhất quán qua các generation và giao trọn section cho
+một ca sĩ trong duet để tránh đổi giọng giữa dòng.
+7. Emotion, dynamics và cách nhả chữ
+Các tag như [Tender], [Melancholic], [Intimate], [Desperate], [Triumphant], [Soft], [Building], [Powerful],
+[Climactic] xuất hiện trong tài liệu v5.5. Trong V6, hãy ưu tiên mô tả diễn xuất cụ thể hơn khi cần.
+Muốn
+Cách viết
+Buồn nhưng không yếu
+melancholic, restrained, intimate, emotionally controlled
+Đau và nghẹn
+fragile, breathy, slightly trembling delivery, restrained crying tone
+Điệp khúc bùng nổ
+controlled belting, stacked harmonies, emotional release, full-band lift
+Gợi cảm nhưng sang
+sultry, warm, close-mic, smooth phrasing, restrained dynamics
+Hùng tráng
+anthemic, wide harmonies, rising strings, powerful final chorus
+Dấu ... và chữ IN HOA từng được tài liệu v5.5 mô tả như cách định hình phrasing; đây là heuristic chứ
+không phải quy tắc bảo đảm. Dùng tiết chế, vì quá nhiều dấu hiệu cùng lúc có thể làm câu hát mất tự
+nhiên.
+8. Duet / song ca
+Mô hình “three-location anchoring” trong tài liệu v5.5 là một workflow hữu ích: xác định duet ở Style,
+xác định duet trong đầu Lyrics, rồi gán ca sĩ theo section. Với V6, vẫn nên ưu tiên chia vai theo cả đoạn
+thay vì đổi người từng dòng.
+STYLE
+Vietnamese emotional pop duet, warm male baritone and high female soprano, intimate verses, harmonized
+chorus, cinematic build, warm piano and acoustic guitar.
+LYRICS
+[Duet: Male + Female]
+[Verse 1]
+[Male Vocal]
+...
+[Verse 2]
+[Female Vocal]
+...
+
+--- PAGE 6 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 6
+[Chorus]
+[Both]
+...
+[Bridge]
+[Female Vocal]
+...
+[Final Chorus]
+[Both | Stacked Harmonies]
+...
+Nếu muốn nữ là lead xuyên suốt và nam chỉ làm điểm nhấn: ghi rõ “female lead throughout, occasional
+warm male backing accents” và chỉ dùng [Male Backing] ở những section cần thiết.
+9. Instrumentation và quan hệ giữa các nhạc cụ
+Tài liệu v5.5 khuyến nghị 2–4 nhạc cụ chính. Với V6, điểm nâng cấp là mô tả chức năng của nhạc cụ
+thay vì chỉ liệt kê tên.
+Cách yếu
+Cách tốt hơn
+piano, guitar, strings, drums
+warm piano carries harmony; nylon guitar answers the vocal; strings enter in pre-chorus
+synth, bass, drums
+analog pad creates width; sub bass follows kick; crisp drums drive the chorus
+đàn tranh, sáo, piano
+đàn tranh plays sparse answering motifs; bamboo flute appears only in transitions; piano anchors harmony
+Đặc biệt với nhạc Việt: hãy mô tả nhạc cụ dân tộc như “color/answering motif/intro texture” để chúng
+không nhất thiết chiếm toàn bộ bản phối.
+10. BPM, groove, key, scale và time signature
+Khoảng BPM
+Cảm giác thường gặp
+Gợi ý
+60–75
+chậm, sâu
+ballad, cinematic, ambient
+76–95
+vừa, đung đưa
+pop ballad, folk, R&amp;B
+96–115
+vừa nhanh
+pop, dance, country
+116–132
+nhanh
+dance-pop, house
+130–160
+rất nhanh
+EDM, punk, DnB
+160+
+căng/dồn
+metal, speed-oriented styles
+BPM là một phần mô tả; không nên xem nó như khóa tuyệt đối. Nếu groove không đúng, mô tả
+“laid-back”, “swaying”, “half-time feel”, “driving”, “syncopated” có thể hữu ích hơn việc chỉ tăng/giảm
+BPM.
+76 BPM, 6/8, slow swaying groove
+128 BPM, 4/4, four-on-the-floor house groove
+92 BPM, laid-back R&B pocket
+140 BPM, half-time trap feel
+Các scale như Dorian, Phrygian dominant, Hungarian minor, whole-tone… trong tài liệu v5.5 là công cụ
+tạo màu. V6 có thể diễn giải nhưng không có bảo đảm rằng mọi ràng buộc lý thuyết sẽ được thực hiện
+chính xác trong mọi generation.
+11. Mood, energy và atmosphere
+Mood
+Energy
+Atmosphere
+melancholic
+low
+rainy midnight, intimate room
+
+--- PAGE 7 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 7
+Mood
+Energy
+Atmosphere
+nostalgic
+medium
+warm tape, old photograph feeling
+hopeful
+building
+sunrise, widening space
+euphoric
+high
+festival lights, open-air
+mysterious
+low → building
+fog, distant echoes
+triumphant
+high
+wide crowd, cinematic lift
+Đừng dùng 6–8 mood cùng lúc. Chọn 1–2 mood chính và mô tả chuyển động năng lượng theo section.
+12. Production, texture và mix intent
+Nhóm
+Từ khóa
+Sạch
+clean, hi-fi, polished, clear
+Ấm
+warm, tape-saturated, analog warmth
+Mộc
+organic, raw, natural dynamics, room sound
+Rộng
+wide stereo, spacious, cinematic
+Gần
+close-mic, intimate, dry vocal
+Thô
+gritty, raw, distorted, live-room energy
+Mơ
+lush, atmospheric, distant reverb, soft transients
+Production tags nên phục vụ mục tiêu âm thanh. “Wide stereo + heavy reverb + distant vocal + lush
+pads + huge orchestra” cùng lúc có thể làm giọng chìm. Nếu vocal là ưu tiên, hãy nói rõ “vocal forward,
+intelligible, close and present”.
+13. Pipe stacking: dùng dấu | đúng cách
+Tài liệu v5.5 sử dụng cú pháp [Section | modifier | modifier]. Đây là một kỹ thuật prompt hữu ích nhưng
+không phải cú pháp API chính thức. V6 cũng hiểu plain language, vì vậy pipe stacking nên dùng như
+shorthand, không phải bắt buộc.
+[Verse | intimate | warm piano | sparse drums]
+[Pre-Chorus | rising strings | building tension]
+[Chorus | powerful belting | stacked harmonies | full band]
+[Bridge | stripped down | vulnerable | close-mic]
+[Final Chorus | climactic | wide harmonies | full band]
+Quy tắc thực hành: 1 section + 2–5 modifier rõ nghĩa thường dễ kiểm soát hơn một chuỗi dài 10–15
+modifier.
+14. Negative prompts / Exclude
+Tài liệu v5.5 đặt negative prompts ở cuối Style. Với workflow V6, hãy dùng chúng để loại một vài yếu tố
+thật sự phá ý tưởng, không biến prompt thành danh sách “không được”.
+... warm close vocal, organic drums, cinematic strings; no male lead, no EDM drop, no aggressive trap hi-hats
+Nếu nền tảng/UI có trường Exclude Styles riêng, ưu tiên dùng trường đó cho những thứ bạn muốn loại
+bỏ. Nếu không, đặt ràng buộc ở cuối Style.
+Không nên viết 10–15 negative constraints. Một vài ràng buộc quan trọng thường dễ kiểm soát hơn.
+15. Tạo bài độc đáo mà không làm prompt rối
+Tài liệu v5.5 gợi ý scale lạ, time signature bất đối xứng, combo nhạc cụ lạ, humanization và tránh cliché.
+V6 cho phép đi xa hơn bằng cách mô tả quan hệ giữa các thành phần.
+
+--- PAGE 8 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 8
+Trục sáng tạo
+Ví dụ
+Scale
+Dorian, Phrygian dominant, whole-tone
+Groove
+5/4, 7/8, 6/8, laid-back shuffle
+Motif
+3-note motif returns in every chorus
+Arrangement
+add one new layer every 8 bars
+Texture
+tape flutter, room ambience, granular texture
+Contrast
+near-silence before final chorus
+Instrument pairing
+đàn tranh + analog synth bass + cello
+Công thức độc đáo an toàn: chỉ chọn 1 điểm lạ ở harmony/groove + 1 điểm lạ ở instrumentation + 1
+điểm lạ ở arrangement. Đừng làm cả 7 trục cùng lúc.
+16. V6, v6-wild, v6-mini: chọn model
+Suno hiện mô tả v6 là flagship; v6-wild thiên về bất ngờ; v6-mini nhanh và nhẹ.
+Tình huống
+Model
+Bạn biết chính xác muốn gì
+v6
+Bạn đang bí ý tưởng, muốn texture lạ
+v6-wild
+Muốn test nhanh nhiều concept
+v6-mini
+Có một bản wild rất hay nhưng chưa ổn định
+Mang ý tưởng/đặc điểm hay sang v6 để refine
+Đây là workflow đề xuất dựa trên mô tả chính thức của Suno, không phải quy tắc bắt buộc.
+17. Simple Mode, Custom Mode và workflow
+Khi cần tốc độ, hãy bắt đầu bằng một câu mô tả tự nhiên. Khi cần kiểm soát cấu trúc, chuyển sang
+Custom/Lyrics với section tags.
+SIMPLE IDEA
+A nostalgic Vietnamese river-town pop ballad about remembering someone after the rainy season, high female
+lead, warm piano and đàn tranh, intimate verses and a soaring final chorus.
+CUSTOM WORKFLOW
+1) Style = sound DNA
+2) Lyrics = section structure
+3) Generate 2–4 variants
+4) Pick the best arrangement/vocal behavior
+5) Edit only the weak section
+6) Extend if the song needs more length
+7) Final listen for vocal, arrangement, ending, artifacts
+18. Variety, Style Influence, Max Mode và thử
+nghiệm
+Tên và mức của các điều khiển có thể thay đổi theo giao diện Suno. Không nên coi một slider là “độ
+hay”. Hãy xem nó là một biến thử nghiệm.
+Biến
+Khi muốn thử
+Variety cao hơn
+Khi các bản quá giống nhau
+Variety thấp hơn
+Khi đã có brief ổn và muốn ổn định
+Style influence cao hơn
+Khi genre/brief đang bị bỏ qua
+Style influence thấp hơn
+Khi kết quả quá cứng hoặc thiếu bất ngờ
+
+--- PAGE 9 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 9
+Biến
+Khi muốn thử
+Max/advanced mode
+Khi cần kiểm soát sâu hơn và chấp nhận test nhiều
+Nếu giao diện hiện tại của tài khoản có tên hoặc mức khác, ưu tiên thông tin hiển thị trong Suno thay vì
+cố áp dụng con số từ một guide cũ.
+19. Multimodal prompting: text, audio, image,
+video
+Suno chính thức cho biết v6 hỗ trợ tạo từ text, audio, images và video. Điều này thay đổi cách viết
+prompt: bạn không cần mô tả mọi thứ bằng chữ nếu nguồn tham chiếu đã mang một phần thông tin.
+IMAGE + TEXT
+Use the image as the emotional and visual reference: humid tropical night, warm river lights, reflective water.
+Create a Vietnamese cinematic pop ballad with high female vocals, sparse piano, đàn tranh accents, and a
+hopeful final chorus.
+AUDIO + TEXT
+Use the uploaded audio as the rhythmic/melodic seed. Preserve its emotional contour, rebuild the arrangement
+as modern Vietnamese pop, warm female lead, organic drums, cinematic strings, and a larger final chorus.
+Khi dùng nguồn tham chiếu, hãy mô tả “cái gì cần giữ” và “cái gì cần thay”, thay vì chỉ nói “make it
+better”.
+20. Edit / Replace Section / Extend / Mashup /
+Sample
+V6 cho phép chỉnh một phần bài bằng plain language, cập nhật một lyric cụ thể, mashup nhiều nguồn,
+và sample/isolate một phần âm thanh. Đây là một trong những khác biệt workflow quan trọng nhất so
+với tư duy “generate lại từ đầu”.
+EDIT CHORUS
+Keep the verses and bridge unchanged. Replace only the chorus with a wider, more emotional female lead,
+stacked harmonies, stronger drums and cinematic strings. Keep the same lyrical hook and tempo.
+LYRIC EDIT
+Change only the final word of the second chorus line. Preserve melody, arrangement, vocals and everything
+else.
+MASHUP
+Take the vocal character from Song A and the rhythmic energy of Song B. Rebuild them as one coherent
+Vietnamese synth-pop track, keeping the vocal forward and the bass tight.
+SAMPLE
+Sample the guitar motif around 0:45, isolate its rhythmic identity, and build a new downtempo beat around it
+with warm bass and atmospheric pads.
+Những ví dụ trên là mẫu prompt dựa trên chức năng Suno công bố; tên thao tác/UI có thể thay đổi.
+21. Troubleshooting
+<b>Giọng đổi ngẫu nhiên</b> — Lặp lại mô tả vocal trong Style; giữ cùng register/timbre; chia section
+rõ; trong duet giao nguyên section cho một người.
+<b>Genre bị bỏ qua</b> — Đưa genre lên đầu Style; giảm số genre; mô tả đặc điểm genre bằng nhạc
+cụ/groove thay vì chỉ tên genre.
+<b>Bài quá đại trà</b> — Thêm một motif riêng, một màu nhạc cụ riêng và một đặc điểm
+arrangement; đừng chỉ thêm 20 tag.
+<b>Vocal chìm</b> — vocal forward, close-mic, intelligible; giảm reverb/distant/lush; giảm số layer ở
+verse.
+
+--- PAGE 10 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 10
+<b>Chorus không bùng nổ</b> — Tạo arc: sparse verse → rising pre-chorus → full final chorus; thêm
+contrast trước final chorus.
+<b>Intro biến mất</b> — Ghi rõ short instrumental intro và mô tả nhạc cụ/texture intro.
+<b>Bài lặp quá nhiều</b> — Rút gọn prompt; kiểm tra hook/refrain; chỉ dùng repeat ở nơi cần; thêm
+[End] hoặc outro direction nếu phù hợp.
+<b>Ending cụt</b> — Viết rõ final chorus → outro; dùng fade/resolve/big finish theo ý muốn.
+<b>Nhạc cụ dân tộc biến mất</b> — Cho nhạc cụ một vai trò cụ thể: intro motif, answer phrase,
+transition, hook layer.
+<b>AI-sounding lyrics</b> — Viết lời cụ thể, hình ảnh thật, câu dài/ngắn đan xen; tránh toàn câu sáo
+rỗng; dùng dấu phẩy và dấu ba chấm có chủ đích.
+Các mẹo này kế thừa phần Troubleshooting trong tài liệu v5.5 nhưng đã được điều chỉnh cho workflow
+V6.
+22. Bộ template Style copy-paste
+Ballad Việt điện ảnh
+Vietnamese cinematic pop ballad, 76 BPM, 6/8, melancholic but hopeful, high female lead vocal, airy and
+intimate verses, controlled emotional belting in choruses, warm piano carries harmony, đàn tranh adds sparse
+Vietnamese color, soft cello enters in the build, gradual arrangement, wide emotional final chorus, warm close
+vocal, polished cinematic mix; no male lead, no EDM drop.
+Pop nữ cao + điện tử + dân tộc
+Vietnamese modern pop, 100 BPM, emotional and uplifting, high female lead with airy upper register, warm
+occasional male backing accents, đàn tranh and bamboo flute answering the vocal, modern synth bass and
+clean electronic drums, intimate verse, rising pre-chorus, powerful hook-driven chorus, wide polished mix; no
+heavy trap hats.
+Bolero miền Tây
+Vietnamese bolero, slow 72 BPM, nostalgic and bittersweet, warm female lead vocal with conversational
+phrasing, nylon-string guitar, accordion and soft bass, gentle brushed percussion, spacious but intimate room
+sound, memorable melodic hook, restrained emotional chorus; no EDM, no aggressive drums.
+Vinahouse
+Vietnamese dance-pop / vinahouse, 128 BPM, energetic and celebratory, bright female lead, punchy kick, rolling
+bass, modern synth lead, short Vietnamese instrumental hook, build into explosive chorus, clean loud club mix,
+tight low end; no rock guitars.
+Cinematic tâm linh
+Cinematic ambient pop, 68 BPM, mysterious, peaceful and contemplative, high female vocal with breathy
+intimate delivery, piano, soft strings, low drone, distant bells, slow build toward a luminous final chorus, wide
+atmospheric mix, natural dynamics; no aggressive percussion.
+23. Bộ template Lyrics copy-paste
+[Intro]
+[Instrumental | Atmospheric | Sparse]
+(short instrumental opening)
+[Verse 1]
+[Female Lead | Intimate | Breathier]
+Dòng lời 1...
+Dòng lời 2...
+Dòng lời 3...
+Dòng lời 4...
+
+--- PAGE 11 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 11
+[Pre-Chorus]
+[Building | Rising]
+Dòng lời 1...
+Dòng lời 2...
+[Chorus]
+[Powerful | Wide Harmonies]
+HOOK CHÍNH...
+HOOK LẶP...
+Câu kết điệp khúc...
+[Verse 2]
+[Warm | Slightly More Energy]
+Dòng lời...
+Dòng lời...
+[Bridge]
+[Quiet | Vulnerable | Close-mic]
+Dòng lời...
+Dòng lời...
+[Final Chorus]
+[Climactic | Full Band | Stacked Harmonies]
+HOOK CHÍNH...
+HOOK LẶP...
+HOOK BIẾN THỂ...
+[Outro]
+[Soft | Fade Out]
+Câu kết...
+Với lời Việt, hãy để phần lời tự nhiên. Không cần biến mọi câu thành tag. Chỉ dẫn nên tập trung ở đầu
+section hoặc trước câu cần thay đổi rõ rệt.
+24. Template duet
+STYLE
+Vietnamese emotional pop duet, warm male baritone and high female soprano, female lead prominence,
+intimate verses, harmonized chorus, warm piano, acoustic guitar, cinematic strings, gradual build, polished
+natural mix.
+LYRICS
+[Duet: Male + Female]
+[Verse 1]
+[Male Vocal | Warm | Intimate]
+...
+[Verse 2]
+[Female Vocal | Airy | Emotional]
+...
+[Pre-Chorus]
+[Female Lead | Building]
+...
+[Chorus]
+[Both | Stacked Harmonies | Powerful]
+...
+[Bridge]
+
+--- PAGE 12 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 12
+[Male Vocal | Vulnerable]
+...
+[Final Chorus]
+[Female Lead | Both on selected lines | Climactic]
+...
+25. Template cho nhạc Việt
+Đối với nhạc Việt, ưu tiên mô tả hình ảnh, ngữ điệu và vai trò nhạc cụ. Không cần “dịch” mọi câu lệnh
+sang tiếng Việt nếu bạn muốn phần command bằng tiếng Anh.
+STYLE
+Vietnamese [GENRE], [BPM] BPM, [MOOD], [VOCAL IDENTITY], [2–4 INSTRUMENTS], [GROOVE], [ARRANGEMENT
+ARC], [MIX INTENT]; no [UNWANTED ELEMENT].
+LYRICS
+[Intro | Vietnamese instrumental color]
+[Verse 1]
+[Vocal: intimate | conversational]
+...
+[Pre-Chorus]
+[Building | rising emotion]
+...
+[Chorus]
+[Powerful | melodic hook | stacked harmonies]
+...
+[Bridge]
+[Stripped down | vulnerable]
+...
+[Final Chorus]
+[Climactic | full arrangement]
+...
+[Outro]
+[Soft | lingering final line]
+26. Công thức theo thể loại
+Pop / Radio
+[Intro | hook first | bright texture]
+[Verse | intimate vocal | warm piano | subtle drums]
+[Pre-Chorus | rising harmony | building percussion]
+[Chorus | anthemic | stacked harmonies | full band]
+[Bridge | contrast | stripped down]
+[Final Chorus | climactic | full band]
+Ballad
+[Intro | piano | room ambience]
+[Verse | close-mic | intimate | sparse]
+[Pre-Chorus | gradual build | strings enter]
+[Chorus | emotional belting | wide strings]
+[Bridge | quiet | vulnerable]
+[Final Chorus | full emotional release]
+[Outro | piano tail | soft]
+
+--- PAGE 13 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 13
+Bolero
+[Intro | nylon guitar | accordion]
+[Verse | conversational vocal | gentle rhythm]
+[Chorus | melodic hook | warm harmonies]
+[Interlude | guitar fill | accordion answer]
+[Final Chorus | emotional | slightly fuller arrangement]
+[Outro | instrumental resolve]
+Vinahouse
+[Intro | short synth motif | filtered build]
+[Verse | bright female vocal | tight kick]
+[Build | riser | snare build]
+[Drop | punchy kick | bass | synth lead]
+[Chorus | hook vocal | full dance arrangement]
+[Breakdown | stripped bass | vocal focus]
+[Final Drop | explosive | full energy]
+EDM
+[Intro | atmospheric pads]
+[Verse | vocal hook | sparse beat]
+[Build | riser | snare roll | increasing tension]
+[Drop | sidechained synth bass | punchy kick | wide synths]
+[Breakdown | vocal focus]
+[Final Drop | full energy | layered synths]
+Rock
+[Intro | guitar riff | live drums]
+[Verse | raspy lead | driving bass]
+[Pre-Chorus | rising tension]
+[Chorus | anthemic | full band | stacked vocals]
+[Bridge | breakdown | guitar texture]
+[Solo | expressive guitar]
+[Final Chorus | explosive | full band]
+Cinematic
+[Intro | ambient texture | sparse piano]
+[Verse | intimate vocal | wide pads]
+[Build | strings swell | rising tension]
+[Chorus | full orchestra | emotional release]
+[Bridge | near-silence | solo voice]
+[Final Chorus | orchestral peak | choir texture]
+[Outro | distant tail | fade]
+27. Quy trình A/B test
+Đừng đổi 5 biến cùng lúc. Hãy thay một biến chính rồi so sánh.
+TEST A — CONTROLLED
+Keep genre, BPM and lyrics unchanged.
+Change only vocal delivery:
+A = intimate airy
+B = warm clear
+C = powerful belted
+TEST B — ARRANGEMENT
+Keep vocal unchanged.
+A = piano + acoustic guitar
+B = piano + đàn tranh + cello
+C = piano + synth pad + strings
+
+--- PAGE 14 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 14
+TEST C — MODEL
+Same brief:
+v6 = controlled
+v6-wild = exploratory
+v6-mini = quick draft
+Sau mỗi lượt, ghi lại: vocal, groove, arrangement, hook, ending, artifacts. Chọn bản có yếu tố bạn cần
+rồi Edit thay vì cố “đập lại” prompt toàn bộ.
+28. Checklist trước khi bấm Create
+• Genre chính đã rõ chưa?
+• Tempo/groove có phù hợp cảm xúc không?
+• Lead vocal đã mô tả register + timbre + delivery chưa?
+• Chỉ 2–4 nhạc cụ chính hay chưa?
+• Nhạc cụ có vai trò cụ thể thay vì chỉ liệt kê?
+• Verse → pre-chorus → chorus → bridge → final chorus có arc không?
+• Hook có đủ rõ và lặp có chủ đích không?
+• Style có quá nhiều tag/ý mâu thuẫn không?
+• Negative constraints có thật sự cần không?
+• Lời có hình ảnh cụ thể, tự nhiên và không quá sáo không?
+• Đoạn cuối có hướng kết thúc rõ không?
+• Bạn đang dùng v6 hay v6-wild/v6-mini đúng mục tiêu chưa?
+29. Các điểm KHÔNG nên coi là quy tắc chắc chắn
+Đây là phần rất quan trọng khi chuyển từ một guide v5.5 sang V6. Một số câu trong các guide cộng
+đồng nghe giống “luật hệ thống”, nhưng Suno không công bố chúng như API grammar.
+• “20–30 từ đầu tiên luôn có trọng số cao nhất” — có trong tài liệu v5.5 người dùng cung cấp, nhưng
+không nên coi là thông số kỹ thuật chính thức của V6.
+• “8–15 tag là sweet spot” — là heuristic của tài liệu v5.5, không phải giới hạn V6.
+• “[] luôn không bao giờ được hát” — hữu ích như quy ước prompt, nhưng không có nghĩa mọi chuỗi []
+đều được Suno thực thi giống nhau.
+• “Một tag cụ thể chắc chắn tạo đúng hiệu ứng” — không bảo đảm; Suno vẫn là hệ thống sinh xác suất.
+• Humanization bằng phần trăm timing jitter/velocity/pitch drift — các con số này trong guide cũ nên
+xem là ý tưởng sáng tạo, không phải control chính xác của Suno.
+• Persona/tag tên riêng từ V5 — không nên mặc định chúng là tính năng V6 nếu Suno không xác nhận.
+Nguyên tắc an toàn: nếu một điều khiển không được Suno xác nhận, hãy coi nó là prompt heuristic và
+test bằng nhiều generation.
+30. Bộ prompt mẫu hoàn chỉnh
+Mẫu 1 — Nữ cao, dân tộc + electronic
+STYLE
+Vietnamese cinematic electropop, 96 BPM, bittersweet and hopeful, high female lead with airy upper register
+and warm lower mids, occasional warm male backing accents, đàn tranh plays sparse answering motifs, bamboo
+flute appears in transitions, modern synth bass and clean electronic drums, intimate verse, rising pre-chorus,
+explosive final chorus, vocal forward and clear, polished wide mix; no male lead, no aggressive trap hats.
+
+--- PAGE 15 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 15
+LYRICS
+[Intro | đàn tranh motif | atmospheric synth]
+[Instrumental]
+[Verse 1]
+[Female Lead | Intimate | Airy]
+Tôi đi qua...
+[Pre-Chorus]
+[Building | Rising]
+Và rồi...
+[Chorus]
+[Powerful | Stacked Harmonies]
+HOOK CỦA BẠN...
+[Bridge]
+[Quiet | Vulnerable]
+...
+[Final Chorus]
+[Climactic | Full Band | Wide Harmonies]
+HOOK CỦA BẠN...
+[Outro]
+[Soft | Fade Out]
+...
+Mẫu 2 — Ballad Việt tự nhiên
+STYLE
+Vietnamese emotional pop ballad, 74 BPM, 6/8, nostalgic and intimate, warm female lead vocal with
+conversational phrasing and controlled emotional lift, piano carries the harmony, nylon guitar adds gentle
+movement, cello enters gradually, sparse opening and fuller final chorus, natural dynamics, close vocal, warm
+room ambience, cinematic but organic mix; no EDM drop, no heavy trap drums.
+LYRICS
+[Intro]
+[Soft Piano | Room Ambience]
+[Verse 1]
+[Female Vocal | Close-mic | Intimate]
+...
+[Pre-Chorus]
+[Building]
+...
+[Chorus]
+[Emotional | Powerful]
+...
+[Verse 2]
+[Warm | Slightly More Energy]
+...
+[Bridge]
+[Quiet | Vulnerable]
+...
+
+--- PAGE 16 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 16
+[Final Chorus]
+[Climactic | Cello Lift | Stacked Harmonies]
+...
+[Outro]
+[Soft | Piano Tail]
+...
+Mẫu 3 — Miền Tây / bolero
+STYLE
+Vietnamese Mekong bolero, 72 BPM, nostalgic and bittersweet, warm female lead with natural conversational
+phrasing, nylon guitar, accordion, upright bass and brushed percussion, gentle sway, memorable melodic hook,
+intimate room sound, gradual emotional lift in the final chorus, warm organic mix; no EDM, no aggressive
+electronic drums.
+LYRICS
+[Intro | Nylon Guitar | Accordion Answer]
+[Verse 1]
+[Warm | Conversational]
+...
+[Chorus]
+[Melodic Hook | Emotional]
+...
+[Verse 2]
+[More Intimate]
+...
+[Interlude | Guitar Fill | Accordion]
+[Final Chorus]
+[Climactic | Warm Harmonies]
+...
+[Outro]
+[Instrumental Resolve]
+...
+Mẫu 4 — V6 wild để tìm ý tưởng
+STYLE
+Vietnamese cinematic pop with unexpected Southeast Asian instrumental colors, 88 BPM, 6/8 shifting into 4/4 at
+the final chorus, mysterious and nostalgic, high female vocal, đàn tranh + bowed cello + modular synth texture,
+motif returns with small variations each chorus, sparse first half then sudden near-silence before the final
+chorus, wide atmospheric production; avoid generic EDM drop and stock trap hi-hats.
+31. Phụ lục tag nhanh
+Structure
+[Intro], [Verse 1], [Pre-Chorus], [Chorus], [Post-Chorus], [Bridge], [Hook], [Refrain], [Instrumental],
+[Interlude], [Breakdown], [Drop], [Final Chorus], [Outro], [End]
+Vocal
+[Female Vocal], [Male Vocal], [Soprano], [Alto], [Tenor], [Baritone], [Breathy], [Raspy], [Warm],
+[Intimate], [Falsetto], [Belting], [Spoken Word], [Rap], [Melodic Rap], [Humming], [Choir]
+Emotion
+
+--- PAGE 17 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 17
+[Tender], [Sad], [Melancholic], [Nostalgic], [Vulnerable], [Desperate], [Joyful], [Mysterious],
+[Triumphant], [Romantic], [Intense]
+Dynamics
+[Soft], [Quiet], [Building], [Powerful], [Loud], [Crescendo], [Climactic], [Explosive], [Fade Out]
+Production
+[Warm], [Raw], [Clean], [Hi-fi], [Lo-fi], [Gritty], [Lush], [Sparse], [Atmospheric], [Wide Stereo],
+[Close-mic], [Room Sound], [Radio-ready]
+Instruments
+[Grand Piano], [Rhodes], [Acoustic Guitar], [Nylon Guitar], [Electric Guitar], [Bass], [Synth Bass], [Violin],
+[Cello], [Strings], [Flute], [Saxophone], [Trumpet], [Taiko], [Tabla], [Drum Machine]
+Atmosphere
+[Rain], [Wind], [Ocean Waves], [Birdsong], [Forest], [City Ambience], [Crowd], [Applause], [Static],
+[Radio Tuning], [Record Scratch]
+32. Nguồn tham khảo
+1) Suno — Introducing v6, 09/09/2026: mô tả v6/v6-wild/v6-mini, các khả năng mới và multimodal
+creation.
+2) Suno Help Center — What’s new in v6?, 09/09/2026: model differences, quyền truy cập và giới hạn
+generation.
+3) Suno Help Center — v6 FAQ, 09/09/2026: khác biệt model, model cũ được retire và tiếp tục làm việc
+với bài cũ.
+4) Tài liệu người dùng cung cấp: “v5.5.pdf · phiên bản 1.pdf”, 22 trang — nền tảng cho phần tag, vocal,
+duet, structure, instrumentation, production, troubleshooting và templates.
+5) Các hướng dẫn cộng đồng về Suno v6 công bố sau 09/09/2026 — dùng để tổng hợp workflow thử
+nghiệm; không xem là tài liệu chính thức của Suno.
+Ghi chú bản quyền: Tài liệu này là bản biên soạn mới, không sao chép nguyên văn các guide thương
+mại/được bán. Các ví dụ prompt trong tài liệu được viết lại để phục vụ học tập và thực hành.
+
+--- PAGE 18 ---
+SUNO V6 PROMPT MASTER GUIDE — Bản tiếng Việt, cập nhật 16/09/2026
+Trang 18
+KẾT LUẬN — CÔNG THỨC SUNO V6
+THỰC CHIẾN
+1. CHỌN MODEL
+v6 = kiểm soát
+v6-wild = khám phá
+v6-mini = thử nhanh
+2. VIẾT STYLE
+Identity → Pulse → Players → Performance → Arc → Mix → Constraints
+3. VIẾT LYRICS
+Section → Vocal/Emotion → Lyrics → Contrast → Final payoff
+4. GENERATE
+Tạo nhiều biến thể thay vì tin một generation duy nhất.
+5. CHỌN
+Giữ bản có vocal/groove/arrangement tốt nhất.
+6. EDIT
+Sửa đúng section yếu bằng plain language.
+7. REFINE
+Chỉ thay một biến mỗi lần test.
+8. HOÀN THIỆN
+Kiểm tra hook, vocal, ending, artifacts và độ nhất quán.
+Nếu chỉ nhớ một câu: V6 không cần bạn “nhồi tag”; hãy cho nó một
+brief âm nhạc rõ ràng, có vai trò giữa các thành phần, có đường cong
+năng lượng và có giới hạn cần thiết.
